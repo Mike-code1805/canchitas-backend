@@ -1,62 +1,20 @@
-import { Schema } from "mongoose";
-import { Hat } from "../types/AdminCanchaModel";
+import { Schema } from 'mongoose';
+import { AdminCancha } from '../types/AdminCanchaModel';
 
-export const hatSchema = new Schema<Hat>({
-  address: {
-    type: String,
+export const adminCanchaSchema = new Schema<AdminCancha>(
+  {
+    dni: { type: String, required: true },
+    nombres: { type: String, required: true },
+    apellidos: { type: String, required: true, unique: true },
+    nacimiento: { type: Date, required: true, unique: true },
+    sexo: { type: String, required: true, unique: true },
+    telefono: { type: Number, required: true },
+    avatar: { type: String },
+    correo: { type: String, required: true },
+    contraseña: { type: String, required: true },
+    isValid: { type: Boolean, default: false },
   },
-  advancement: {
-    type: String,
-  },
-  cintillo: {
-    type: String,
-  },
-  color_hat: {
-    type: String,
-  },
-  color_tape: {
-    type: String,
-  },
-  date: {
-    type: String,
-  },
-  measure: {
-    type: String,
-  },
-  name: {
-    type: String,
-  },
-  observations: {
-    type: String,
-  },
-  price: {
-    type: String,
-  },
-  size: {
-    type: String,
-  },
-  state: {
-    type: String,
-  },
-  state_payment: {
-    type: String,
-  },
-  tafalete: {
-    type: String,
-  },
-  pendiente: {
-    type: Boolean,
-  },
-  created_at: {
-    type: Date,
-    default: new Date(),
-  },
-  updated_at: {
-    type: Date,
-  },
-  owner: {
-    type: Schema.Types.ObjectId,
-    ref: "User",
-    required: [true, "an user is required to create a project"],
-  },
-});
+  {
+    timestamps: true,
+  }
+);

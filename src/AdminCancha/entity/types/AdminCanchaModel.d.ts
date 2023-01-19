@@ -6,9 +6,13 @@ export interface AdminCancha {
   nombres: string;
   apellidos: string;
   nacimiento: Date;
-  created_at: Date;
-  updated_at: Date | null;
+  sexo: string;
+  telefono: number;
+  avatar: string;
+  correo: string;
+  contraseña: string;
   owner: UserIdType;
+  isValid: boolean;
 }
 
 export type AdminCanchaId = {
