@@ -1,19 +1,16 @@
-import express, {
-  Application,
-  ErrorRequestHandler,
-  NextFunction,
-  Request,
-  Response,
-} from 'express';
+import express, { Application, NextFunction, Request, Response } from 'express';
 import authRouter from './auth/authRoutes';
 import { ApplicationError } from './shared/customErrors/ApplicationError';
+import swaggerUI from 'swagger-ui-express';
+import { swaggerSpecs } from './config/swaggerConfig';
 
 const app: Application = express();
 
 app.use(express.json());
 
-app.use(authRouter);
+app.use('/auth', authRouter);
 
+app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerSpecs));
 app.use(
   (err: ApplicationError, _req: Request, res: Response, next: NextFunction) => {
     res

@@ -5,7 +5,7 @@ import { authValidateUserService } from './authValidateUserService';
 
 export type TokenResponse = {
   user: User;
-  tokens: Token;
+  token: Token;
 };
 
 type Token = {
@@ -17,8 +17,8 @@ export const authSigninUserService = async (
 ): Promise<TokenResponse> => {
   try {
     const user = await authValidateUserService(userRequest);
-    const tokens = await authCreateTokenService(user.id);
-    return { user, tokens };
+    const token = await authCreateTokenService(user.id);
+    return { user, token };
   } catch (error: any) {
     Logger.error('Error login User', {
       instance: 'services',

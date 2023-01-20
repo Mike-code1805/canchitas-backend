@@ -166,3 +166,355 @@
        fn:undefined 
 
        trace: error creating User with email email1@email.com
+2023-01-20 15:18:56:1856 
+       [31merror[39m: [31merror creating User with email email2@email.com[39m 
+  
+       instance: undefined 
+
+       fn:createUserService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.users index: correo_1 dup key: { correo: "email2@email.com" }
+2023-01-20 15:18:56:1856 
+       [31merror[39m: [31mError creating User account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: error creating User with email email2@email.com
+2023-01-20 15:19:07:197 
+       [31merror[39m: [31merror validating body request La confirmación de contraseña es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La confirmación de contraseña es obligatoria
+2023-01-20 15:19:30:1930 
+       [31merror[39m: [31mError validating User credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El correo o contraseña del usuario es incorrecta
+2023-01-20 15:19:30:1930 
+       [31merror[39m: [31mError login User[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El correo o contraseña del usuario es incorrecta
+2023-01-20 15:19:48:1948 
+       [31merror[39m: [31merror validating body request La contraseña debe tener al menos 5 caracteres[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La contraseña debe tener al menos 5 caracteres
+2023-01-20 15:20:17:2017 
+       [31merror[39m: [31merror validating body request La contraseña debe tener al menos 5 caracteres[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La contraseña debe tener al menos 5 caracteres
+2023-01-20 15:21:50:2150 
+       [31merror[39m: [31merror validating body request La contraseña debe tener al menos 5 caracteres[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La contraseña debe tener al menos 5 caracteres
+2023-01-20 15:21:54:2154 
+       [31merror[39m: [31merror validating body request La contraseña debe tener al menos 5 caracteres[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La contraseña debe tener al menos 5 caracteres
+2023-01-20 15:35:42:3542 
+       [31merror[39m: [31merror validating body request La contraseña debe tener al menos 5 caracteres[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La contraseña debe tener al menos 5 caracteres
+2023-01-20 16:15:32:1532 
+       [31merror[39m: [31mError validating User credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: No existe el usuario
+2023-01-20 16:15:32:1532 
+       [31merror[39m: [31mError login User[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: No existe el usuario
+2023-01-20 16:15:37:1537 
+       [31merror[39m: [31mError validating User credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: No existe el usuario
+2023-01-20 16:15:37:1537 
+       [31merror[39m: [31mError login User[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: No existe el usuario
+2023-01-20 16:16:06:166 
+       [31merror[39m: [31mError validating User credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: No existe el usuario
+2023-01-20 16:16:06:166 
+       [31merror[39m: [31mError login User[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: No existe el usuario
+2023-01-20 16:16:57:1657 
+       [31merror[39m: [31mError validating User credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: No existe el usuario
+2023-01-20 16:16:57:1657 
+       [31merror[39m: [31mError login User[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: No existe el usuario
+2023-01-20 16:18:06:186 
+       [31merror[39m: [31merror validating body request El sexo es obligatorio[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El sexo es obligatorio
+2023-01-20 16:18:42:1842 
+       [31merror[39m: [31merror creating User with email miguelenrique@gmail.com[39m 
+  
+       instance: undefined 
+
+       fn:createUserService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.users index: correo_1 dup key: { correo: "miguelenrique@gmail.com" }
+2023-01-20 16:18:42:1842 
+       [31merror[39m: [31mError creating User account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: error creating User with email miguelenrique@gmail.com
+2023-01-20 16:30:24:3024 
+       [31merror[39m: [31mError validating User credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El correo o contraseña del usuario es incorrecta
+2023-01-20 16:30:24:3024 
+       [31merror[39m: [31mError login User[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El correo o contraseña del usuario es incorrecta
+2023-01-20 16:31:10:3110 
+       [31merror[39m: [31merror validating body request La contraseña es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La contraseña es obligatoria
+2023-01-20 16:32:14:3214 
+       [31merror[39m: [31mError validating User credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El correo o contraseña del usuario es incorrecta
+2023-01-20 16:32:14:3214 
+       [31merror[39m: [31mError login User[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El correo o contraseña del usuario es incorrecta
+2023-01-20 16:32:23:3223 
+       [31merror[39m: [31merror validating body request La contraseña es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La contraseña es obligatoria
+2023-01-20 16:33:03:333 
+       [31merror[39m: [31merror validating body request Las contraseñas deben coincidir[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: Las contraseñas deben coincidir
+2023-01-20 16:34:00:340 
+       [31merror[39m: [31merror creating User with email miguelenrique@gmail.com[39m 
+  
+       instance: undefined 
+
+       fn:createUserService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.users index: correo_1 dup key: { correo: "miguelenrique@gmail.com" }
+2023-01-20 16:34:00:340 
+       [31merror[39m: [31mError creating User account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: error creating User with email miguelenrique@gmail.com
+2023-01-20 16:40:28:4028 
+       [31merror[39m: [31mError validating User credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: No existe el usuario
+2023-01-20 16:40:28:4028 
+       [31merror[39m: [31mError login User[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: No existe el usuario
+2023-01-20 16:44:30:4430 
+       [31merror[39m: [31merror creating User with email miguelenrique@gmail.com[39m 
+  
+       instance: undefined 
+
+       fn:createUserService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.users index: correo_1 dup key: { correo: "miguelenrique@gmail.com" }
+2023-01-20 16:44:30:4430 
+       [31merror[39m: [31mError creating User account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: error creating User with email miguelenrique@gmail.com
+2023-01-20 16:44:33:4433 
+       [31merror[39m: [31merror validating body request Las contraseñas deben coincidir[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: Las contraseñas deben coincidir
+2023-01-20 16:44:36:4436 
+       [31merror[39m: [31merror creating User with email miguelenrique@gmail.com[39m 
+  
+       instance: undefined 
+
+       fn:createUserService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.users index: correo_1 dup key: { correo: "miguelenrique@gmail.com" }
+2023-01-20 16:44:36:4436 
+       [31merror[39m: [31mError creating User account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: error creating User with email miguelenrique@gmail.com
+2023-01-20 17:06:37:637 
+       [31merror[39m: [31merror creating User with email miguelenrique@gmail.com[39m 
+  
+       instance: undefined 
+
+       fn:createUserService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.users index: correo_1 dup key: { correo: "miguelenrique@gmail.com" }
+2023-01-20 17:06:37:637 
+       [31merror[39m: [31mError creating User account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: error creating User with email miguelenrique@gmail.com
+2023-01-20 17:06:58:658 
+       [31merror[39m: [31merror validating body request El teléfono es obligatorio[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El teléfono es obligatorio
+2023-01-20 17:07:58:758 
+       [31merror[39m: [31merror validating body request El teléfono es obligatorio[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El teléfono es obligatorio
+2023-01-20 17:08:03:83 
+       [31merror[39m: [31mError creating User account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: Este correo ya existe
+2023-01-20 17:08:15:815 
+       [31merror[39m: [31mError validating User credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: (0 , services_1.getOneUserByCorreoService) is not a function
+2023-01-20 17:08:15:815 
+       [31merror[39m: [31mError login User[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: (0 , services_1.getOneUserByCorreoService) is not a function

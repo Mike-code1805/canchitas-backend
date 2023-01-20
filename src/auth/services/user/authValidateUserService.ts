@@ -1,13 +1,13 @@
 import Logger from '../../../shared/logger/appLogger';
 import { LoginUser, User } from '../../../usuario/entitys/user';
-import { getOneUserByCorreoService } from '../../../usuario/services';
 import { validatePassword } from '../../utils/passwordManager';
+import { getOneUserByEmailService } from '../../../usuario/services/getOneUserByEmailService';
 
 export const authValidateUserService = async (
   userRequest: LoginUser
 ): Promise<User> => {
   try {
-    const user = await getOneUserByCorreoService(userRequest.correo);
+    const user = await getOneUserByEmailService(userRequest.correo);
 
     if (!user) throw new Error('No existe el usuario');
 

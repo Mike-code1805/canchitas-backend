@@ -5,7 +5,7 @@ import Logger from '../../../shared/logger/appLogger';
 
 export type TokenResponse = {
   canchero: Canchero;
-  tokens: Token;
+  token: Token;
 };
 
 type Token = {
@@ -17,8 +17,8 @@ export const authSigninCancheroService = async (
 ): Promise<TokenResponse> => {
   try {
     const canchero = await authValidateCancheroService(CancheroRequest);
-    const tokens = await authCreateTokenService(canchero.id);
-    return { canchero, tokens };
+    const token = await authCreateTokenService(canchero.id);
+    return { canchero, token };
   } catch (error: any) {
     Logger.error('Error login Canchero', {
       instance: 'services',

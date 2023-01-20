@@ -1,0 +1,340 @@
+paths:
+  /auth/user/signup:
+    post:
+      tags:
+        - User Authentication
+      summary: Register a user.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        201:
+          description: A new user has been registered successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user:
+                    $ref: '#/components/schemas/UserResponse'
+                  token:
+                    $ref: '#/components/schemas/Token'
+        400:
+          description: Unauthorized by invalid data
+        403:
+          description: Forbidden bad request for incorrect data
+
+  /auth/user/signin:
+    post:
+      tags:
+        - User Authentication
+      summary: Login a user.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginUser'
+      responses:
+        201:
+          description: A new user has been logged in successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user:
+                    $ref: '#/components/schemas/UserResponse'
+                  token:
+                    $ref: '#/components/schemas/Token'
+        400:
+          description: Unauthorized by invalid data
+        403:
+          description: Forbidden bad request for incorrect data
+
+  /auth/canchero/signup:
+    post:
+      tags:
+        - Canchero Authentication
+      summary: Register a canchero.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Canchero'
+      responses:
+        201:
+          description: A new canchero has been registered successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  canchero:
+                    $ref: '#/components/schemas/CancheroResponse'
+                  token:
+                    $ref: '#/components/schemas/Token'
+        400:
+          description: Unauthorized by invalid data
+        403:
+          description: Forbidden bad request for incorrect data
+
+  /auth/canchero/signin:
+    post:
+      tags:
+        - Canchero Authentication
+      summary: Login a canchero.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginCanchero'
+      responses:
+        201:
+          description: A new canchero has been logged in successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  canchero:
+                    $ref: '#/components/schemas/CancheroResponse'
+                  token:
+                    $ref: '#/components/schemas/Token'
+        400:
+          description: Unauthorized by invalid data
+        403:
+          description: Forbidden bad request for incorrect data
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        nombres:
+          type: string
+          description: The user names
+          example: Miguel Enrique
+        sexo:
+          type: string
+          description: The gender of the user
+          example: M
+        avatar:
+          type: string
+          description: The avatar of the user
+          example: http://www.image.org/avatar.jpg
+        correo:
+          type: string
+          description: The email of the user
+          example: miguelenrique@gmail.com
+        password:
+          type: string
+          description: The password of the user
+          example: a123456
+        passwordConfirmation:
+          type: string
+          description: The confirmation password of the user
+          example: a123456    
+      required:
+        - nombres
+        - sexo
+        - correo
+        - password
+        - passwordConfirmation
+    
+    UserResponse:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: The user ID associated
+          example: 63cb0523b088aed659ed8a36
+        nombres:
+          type: string
+          description: The user names
+          example: Miguel Enrique
+        sexo:
+          type: string
+          description: The gender of the user
+          example: M
+        avatar:
+          type: string
+          description: The avatar of the user
+          example: http://www.image.org/avatar.jpg
+        correo:
+          type: string
+          description: The email of the user
+          example: miguelenrique@gmail.com
+        password:
+          type: string
+          description: The password of the user
+          example: $2b$10$Zx1YsU5/YzLx7l9FVuysmOh0aCWspWMb.4MCzEWuQsmqHJqPT3Td6
+        isValid: 
+          type: string
+          description: The state of the user
+          example: true
+        createdAt: 
+          type: string
+          description: The date create of the user
+          example: 2023-01-20T21:18:27.857Z
+        updatedAt: 
+          type: string
+          description: The date update of the user
+          example: 2023-01-20T21:18:27.857Z
+        __v: 
+          type: string
+          description: The version of the user
+          example: 0
+
+    Canchero:
+      type: object
+      properties:
+        dni:
+          type: string
+          description: The dni of the canchero
+          example: 72804714
+        nombres:
+          type: string
+          description: The names of the canchero
+          example: Miguel Enrique
+        apellidos:
+          type: string
+          description: The surnames of the canchero
+          example: Saca Accostupa
+        nacimiento:
+          type: string
+          description: The date of birth of the canchero
+          example: 2000-05-19
+        sexo:
+          type: string
+          description: The gender of the canchero
+          example: M
+        telefono:
+          type: number
+          description: The number of the canchero
+          example: 987654321
+        avatar:
+          type: string
+          description: The avatar of the canchero
+          example: http://www.image.org/avatar.jpg
+        correo:
+          type: string
+          description: The email of the canchero
+          example: miguelenrique@gmail.com
+        password:
+          type: string
+          description: The password of the canchero
+          example: a123456
+        passwordConfirmation:
+          type: string
+          description: The confirmation password of the canchero
+          example: a123456    
+      required:
+        - dni
+        - nombres
+        - apellidos
+        - sexo
+        - telefono
+        - correo
+        - password
+        - passwordConfirmation
+    
+    CancheroResponse:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: The canchero ID associated
+          example: 63cb0523b088aed659ed8a36
+        nombres:
+          type: string
+          description: The names of the canchero
+          example: Miguel Enrique
+        apellidos:
+          type: string
+          description: The surnames of the canchero
+          example: Saca Accostupa
+        nacimiento:
+          type: string
+          description: The date of birth of the canchero
+          example: 2000-05-19
+        sexo:
+          type: string
+          description: The gender of the canchero
+          example: M
+        telefono:
+          type: number
+          description: The number of the canchero
+          example: 987654321
+        avatar:
+          type: string
+          description: The avatar of the canchero
+          example: http://www.image.org/avatar.jpg
+        correo:
+          type: string
+          description: The email of the canchero
+          example: miguelenrique@gmail.com
+        password:
+          type: string
+          description: The password of the canchero
+          example: $2b$10$Zx1YsU5/YzLx7l9FVuysmOh0aCWspWMb.4MCzEWuQsmqHJqPT3Td6
+        isValid: 
+          type: string
+          description: The state of the canchero
+          example: true
+        createdAt: 
+          type: string
+          description: The date create of the canchero
+          example: 2023-01-20T21:18:27.857Z
+        updatedAt: 
+          type: string
+          description: The date update of the canchero
+          example: 2023-01-20T21:18:27.857Z
+        __v: 
+          type: string
+          description: The version of the canchero
+          example: 0
+
+    Token:
+      type: object
+      properties:
+        authToken:
+          type: string
+          description: The token for the user or canchero
+          example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzY2FmMGIxNGRmZmFkYjI1YzcyZDljYiIsImlhdCI6MTY3NDI0Njk0OCwiZXhwIjoxNjc0ODUxNzQ4fQ.bXfdZvyEXhIWKdY72_jwkN6yckvMJmOSNlEu7HWzqY8
+      required:
+        - authToken
+    
+    LoginUser:
+      type: object
+      properties:
+        correo:
+          type: string
+          description: The email for the user or canchero
+          example: miguelenriqueuser@gmail.com
+        password:
+          type: string
+          description: The password for the user or canchero
+          example: a123456
+      required:
+        - correo
+        - password
+    LoginCanchero:
+      type: object
+      properties:
+        correo:
+          type: string
+          description: The email for the user or canchero
+          example: miguelenriquecanchero@gmail.com
+        password:
+          type: string
+          description: The password for the user or canchero
+          example: a123456
+      required:
+        - correo
+        - password

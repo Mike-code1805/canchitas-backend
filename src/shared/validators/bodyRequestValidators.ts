@@ -19,6 +19,6 @@ export const bodyRequestValidator =
         trace: error.message,
       });
 
-      next(new ApplicationError(400, error.message));
+      next(new ApplicationError(403, error.message));
     }
   };

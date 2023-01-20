@@ -3,7 +3,7 @@ import Logger from '../../shared/logger/appLogger';
 import { User } from '../entitys/user';
 import { UserModel } from '../entitys/userModel';
 
-export const getOneUserByCorreoService = async (
+export const getOneUserByEmailService = async (
   correo: string
 ): Promise<User | null> => {
   try {
@@ -13,7 +13,7 @@ export const getOneUserByCorreoService = async (
     return user;
   } catch (error: any) {
     Logger.log(`error getting the user with correo: ${correo}`, {
-      service: 'getOneUserByCorreoService',
+      service: 'getOneUserByEmailService',
       trace: error.message,
     });
     throw new Error(`error getting the User with correo${correo}`);
