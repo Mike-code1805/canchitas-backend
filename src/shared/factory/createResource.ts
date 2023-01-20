@@ -1,10 +1,11 @@
-import { ApplicationError } from '../../customErrors/ApplicationError';
+import { ApplicationError } from '../customErrors/ApplicationError';
 import { Model as ModelType } from 'mongoose';
-import { AdminCancha } from '../../AdminCancha/entity/types/AdminCanchaModel';
+import { User } from 'usuario/entitys/user';
+import { Canchero } from '../../canchero/entity/canchero';
 
 export const createResource =
-  <K extends ModelType<AdminCancha>>(Model: K) =>
-  async <T>(resource: T): Promise<AdminCancha> => {
+  <K extends ModelType<Canchero> | ModelType<User>>(Model: K) =>
+  async <T>(resource: T): Promise<Canchero | User> => {
     try {
       const newResource = new Model(resource);
       return await newResource.save();

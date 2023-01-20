@@ -1,0 +1,230 @@
+2023-01-20 13:44:20:4420 
+       [31merror[39m: [31muncaughtException: Cannot find module '../../shared/customErrors/ApplicationError'[39m
+[31mRequire stack:[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\controllers\signinAuthUserController.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\controllers\index.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\authRoutes.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\app.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\index.ts[39m
+[31mError: Cannot find module '../../shared/customErrors/ApplicationError'[39m
+[31mRequire stack:[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\controllers\signinAuthUserController.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\controllers\index.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\authRoutes.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\app.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\index.ts[39m
+[31m    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[31m    at Function.Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+[31m    at require (node:internal/modules/cjs/helpers:103:18)[39m
+[31m    at Object.<anonymous> (D:\Programs-in-React\canchas\canchitas-backend\src\auth\controllers\signinAuthUserController.ts:2:1)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1159:14)[39m
+[31m    at Module._compile (D:\Programs-in-React\canchas\canchitas-backend\node_modules\source-map-support\source-map-support.js:568:25)[39m
+[31m    at Module.m._compile (C:\Users\HP\AppData\Local\Temp\ts-node-dev-hook-6593548587602669.js:69:33)[39m
+[31m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[31m    at require.extensions..jsx.require.extensions..js (C:\Users\HP\AppData\Local\Temp\ts-node-dev-hook-6593548587602669.js:114:20)[39m 
+  
+       instance: undefined 
+
+       fn:undefined 
+
+       trace: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2023-01-20 13:44:44:4444 
+       [31merror[39m: [31muncaughtException: Cannot find module '../../shared/customErrors/ApplicationError'[39m
+[31mRequire stack:[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\controllers\signinAuthUserController.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\controllers\index.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\authRoutes.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\app.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\index.ts[39m
+[31mError: Cannot find module '../../shared/customErrors/ApplicationError'[39m
+[31mRequire stack:[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\controllers\signinAuthUserController.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\controllers\index.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\authRoutes.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\app.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\index.ts[39m
+[31m    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[31m    at Function.Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+[31m    at require (node:internal/modules/cjs/helpers:103:18)[39m
+[31m    at Object.<anonymous> (D:\Programs-in-React\canchas\canchitas-backend\src\auth\controllers\signinAuthUserController.ts:2:1)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1159:14)[39m
+[31m    at Module._compile (D:\Programs-in-React\canchas\canchitas-backend\node_modules\source-map-support\source-map-support.js:568:25)[39m
+[31m    at Module.m._compile (C:\Users\HP\AppData\Local\Temp\ts-node-dev-hook-6593548587602669.js:69:33)[39m
+[31m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[31m    at require.extensions..jsx.require.extensions..js (C:\Users\HP\AppData\Local\Temp\ts-node-dev-hook-6593548587602669.js:114:20)[39m 
+  
+       instance: undefined 
+
+       fn:undefined 
+
+       trace: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2023-01-20 13:45:42:4542 
+       [31merror[39m: [31merror validating body request La confirmación de contraseña es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La confirmación de contraseña es obligatoria
+2023-01-20 13:46:02:462 
+       [31merror[39m: [31merror validating body request La confirmación de contraseña es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La confirmación de contraseña es obligatoria
+2023-01-20 13:46:18:4618 
+       [31merror[39m: [31merror validating body request El email es obligatorio[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El email es obligatorio
+2023-01-20 13:46:50:4650 
+       [31merror[39m: [31merror validating body request El sexo es obligatorio[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El sexo es obligatorio
+2023-01-20 13:46:57:4657 
+       [31merror[39m: [31merror validating body request Solo se acepta "F" ó "M"[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: Solo se acepta "F" ó "M"
+2023-01-20 13:47:03:473 
+       [31merror[39m: [31merror validating body request El nombre son obligatorio[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El nombre son obligatorio
+2023-01-20 13:47:15:4715 
+       [31merror[39m: [31merror validating body request El nombre son obligatorio[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El nombre son obligatorio
+2023-01-20 14:00:57:057 
+       [31merror[39m: [31merror creating User with email email1@email.com[39m 
+  
+       instance: undefined 
+
+       fn:createUserService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.users index: correo_1 dup key: { correo: "email1@email.com" }
+2023-01-20 14:00:57:057 
+       [31merror[39m: [31mError creating User account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: error creating User with email email1@email.com
+2023-01-20 14:03:12:312 
+       [31merror[39m: [31merror creating User with email email1@email.com[39m 
+  
+       instance: undefined 
+
+       fn:createUserService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.users index: correo_1 dup key: { correo: "email1@email.com" }
+2023-01-20 14:03:12:312 
+       [31merror[39m: [31mError creating User account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: error creating User with email email1@email.com
+2023-01-20 14:48:10:4810 
+       [31merror[39m: [31merror validating body request La especialidad es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La especialidad es obligatoria
+2023-01-20 14:48:10:4810 
+       [31merror[39m: [31merror validating body request La especialidad es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La especialidad es obligatoria
+2023-01-20 14:49:04:494 
+       [31merror[39m: [31merror validating body request El teléfono es obligatorio[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El teléfono es obligatorio
+2023-01-20 14:49:29:4929 
+       [31merror[39m: [31merror validating body request La confirmación de contraseña es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La confirmación de contraseña es obligatoria
+2023-01-20 14:49:40:4940 
+       [31merror[39m: [31merror validating body request El correo es obligatorio[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El correo es obligatorio
+2023-01-20 14:49:55:4955 
+       [31merror[39m: [31merror validating body request El correo es obligatorio[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El correo es obligatorio
+2023-01-20 14:50:18:5018 
+       [31merror[39m: [31merror creating Canchero with email email1@email.com[39m 
+  
+       instance: undefined 
+
+       fn:createCancheroService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.cancheros index: dni_1 dup key: { dni: 72548746 }
+2023-01-20 14:50:18:5018 
+       [31merror[39m: [31mError creating Canchero account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: error creando al canchero con el correo email1@email.com
+2023-01-20 14:51:10:5110 
+       [31merror[39m: [31merror creating User with email email1@email.com[39m 
+  
+       instance: undefined 
+
+       fn:createUserService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.users index: correo_1 dup key: { correo: "email1@email.com" }
+2023-01-20 14:51:10:5110 
+       [31merror[39m: [31mError creating User account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: error creating User with email email1@email.com

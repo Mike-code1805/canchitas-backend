@@ -5,14 +5,14 @@ import express, {
   Request,
   Response,
 } from 'express';
-import adminCanchaRouter from './AdminCancha/adminCanchaRoutes';
-import { ApplicationError } from './customErrors/ApplicationError';
+import authRouter from './auth/authRoutes';
+import { ApplicationError } from './shared/customErrors/ApplicationError';
 
 const app: Application = express();
 
 app.use(express.json());
 
-app.use('/api/adminCancha', adminCanchaRouter);
+app.use(authRouter);
 
 app.use(
   (err: ApplicationError, _req: Request, res: Response, next: NextFunction) => {
