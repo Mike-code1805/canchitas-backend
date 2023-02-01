@@ -478,3 +478,27 @@
        fn:undefined 
 
        trace: undefined
+2023-02-01 15:14:34:1434 
+       [31merror[39m: [31merror validating body request La decha de finalización es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La decha de finalización es obligatoria
+2023-02-01 15:15:03:153 
+       [31merror[39m: [31merror validating body request body.end must be a `date` type, but the final value was: `Invalid Date` (cast from the value `"hola"`).[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: body.end must be a `date` type, but the final value was: `Invalid Date` (cast from the value `"hola"`).
+2023-02-01 15:44:17:4417 
+       [31merror[39m: [31merror validating body request body.start must be a `date` type, but the final value was: `Invalid Date` (cast from the value `"data"`).[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: body.start must be a `date` type, but the final value was: `Invalid Date` (cast from the value `"data"`).

@@ -9,7 +9,7 @@ export const deleteOneCanchaService = async (
   userId: string
 ): Promise<boolean> => {
   try {
-    if (!canchaId) throw new Error('invalid project id');
+    if (!canchaId) throw new Error('invalid cancha id');
     if (!userId) throw new Error('invalid user id');
 
     const cancha: Cancha[] = await findOneResourceByIdWithoutPopulate(
@@ -30,9 +30,9 @@ export const deleteOneCanchaService = async (
 
     return result ? true : false;
   } catch (error: any) {
-    logger.error(`Error deleting project: ${error.message}`, {
+    logger.error(`Error deleting cancha: ${error.message}`, {
       instance: 'services',
-      fn: 'deleteOneProjectService',
+      fn: 'deleteOneCanchaService',
       trace: error.message,
     });
     throw new Error(error.message);

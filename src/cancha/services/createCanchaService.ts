@@ -1,7 +1,7 @@
 import Logger from '../../shared/logger/appLogger';
 import { createResource } from '../../shared/factory/createResource';
 import { CreateCancha, Cancha } from '../entity/cancha';
-import { CanchaModel } from '../../cancha/entity/CanchaModel';
+import { CanchaModel } from '../entity/CanchaModel';
 
 export const createCanchaService = async (
   canchaRequest: CreateCancha

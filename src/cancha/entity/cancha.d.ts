@@ -10,7 +10,7 @@ export interface Cancha {
   cantAparcamiento: Number;
   calificacion: Number;
   isValid: boolean;
-  owner: CanchaId;
+  owner: CancheroId;
 }
 
 export type CanchaId = {

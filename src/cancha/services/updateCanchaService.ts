@@ -1,5 +1,5 @@
-import { Cancha } from '../../cancha/entity/cancha';
-import { CanchaModel } from '../../cancha/entity/CanchaModel';
+import { Cancha } from '../entity/cancha';
+import { CanchaModel } from '../entity/CanchaModel';
 import { updateOneResourceById } from '../../shared/factory';
 import Logger from '../../shared/logger/appLogger';
 import { findOneResourceByIdWithoutPopulate } from '../../shared/factory/findOneResourceByIdWithoutPopulate';
