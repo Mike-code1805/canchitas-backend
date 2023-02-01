@@ -13,6 +13,7 @@ export const updateCanchaService = async (
       canchaId,
       cancha
     );
+    if (!editedCancha) throw new Error('cancha not found');
     return editedCancha;
   } catch (error: any) {
     Logger.error(`error uddating Cancha with id ${canchaId}`, {

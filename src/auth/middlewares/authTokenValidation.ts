@@ -26,6 +26,6 @@ export const authTokenValidation = (
   } catch (error: any) {
     if (error.message === 'jwt expired')
       return next(new ApplicationError(401, 'Please log in again'));
-    next(new ApplicationError(401, 'access denied'));
+    next(new ApplicationError(401, 'access token denied'));
   }
 };

@@ -13,6 +13,6 @@ export const updateCanchaController = async (
     res.status(200).json({ message: 'updated' });
   } catch (error: any) {
     Logger.error('error', 'hello', { message: error.message });
-    next(new ApplicationError(400, 'error updating the cart'));
+    next(new ApplicationError(400, error.message));
   }
 };

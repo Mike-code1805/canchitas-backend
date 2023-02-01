@@ -10,8 +10,8 @@ export const getOneCanchaByIdController = async (
 ) => {
   try {
     console.log(req.body.user);
-    const Cancha = await getOneCanchaByIdService(req.params.id);
-    res.status(200).json(Cancha);
+    const cancha = await getOneCanchaByIdService(req.params.id);
+    res.status(200).json({ cancha });
   } catch (error: any) {
     Logger.error('Error on get one Canchas controller', {
       instance: 'controllers',

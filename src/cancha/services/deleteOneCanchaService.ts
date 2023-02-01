@@ -15,7 +15,9 @@ export const deleteOneCanchaService = async (
       owner: userId,
     });
 
-    console.log({result});
+    if (!result) throw new Error('cancha not found');
+
+    console.log({ result });
 
     return result ? true : false;
   } catch (error: any) {
@@ -24,6 +26,6 @@ export const deleteOneCanchaService = async (
       fn: 'deleteOneProjectService',
       trace: error.message,
     });
-    throw new Error(`Error deleting project: ${error.message}`);
+    throw new Error(error.message);
   }
 };

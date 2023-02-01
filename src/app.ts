@@ -14,7 +14,7 @@ app.use('/api/cancha', canchaRouter);
 
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerSpecs));
 app.use(
-  (err: ApplicationError, _req: Request, res: Response, next: NextFunction) => {
+  (err: any, _req: Request, res: Response, next: NextFunction) => {
     res
       .status(err.statusCode ? err.statusCode : 500)
       .send({ message: err.message });

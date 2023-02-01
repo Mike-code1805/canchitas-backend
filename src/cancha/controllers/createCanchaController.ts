@@ -6,22 +6,16 @@ import { createCanchaService } from '../services';
 import Logger from '../../shared/logger/appLogger';
 
 export const createCanchaController = async (
-  req: Request<{}, {}, CreateCancha>,
+  req: Request,
   res: Response,
   next: NextFunction
 ): Promise<void> => {
-  const { authorization } = req.headers;
-  if (!authorization) {
-    return next(new ApplicationError(401, 'No token provided'));
-  }
-  const user: any = validateAuthToken(authorization);
-
   try {
-    const newCancha = await createCanchaService({
+    const cancha = await createCanchaService({
       ...req.body,
-      owner: user.id,
+      owner: req.body.user.id,
     });
-    res.status(201).json(newCancha);
+    res.status(201).json({ cancha });
   } catch (error: any) {
     Logger.error('error on create Cancha controller', {
       instance: 'controller',

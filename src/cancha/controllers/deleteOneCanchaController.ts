@@ -11,12 +11,7 @@ export const deleteOneCanchaController = async (
 ): Promise<void> => {
   try {
     const { id } = req.params;
-    const { authorization } = req.headers;
-    if (!authorization) {
-      return next(new ApplicationError(401, 'No token provided'));
-    }
-    const user: any = validateAuthToken(authorization);
-    const result = await deleteOneCanchaService(id, user.id);
+    const result = await deleteOneCanchaService(id, req.body.user.id);
     res.status(200).json({ succes: result });
   } catch (error: any) {
     Logger.error('Error on get all Canchas controller', {
@@ -25,7 +20,7 @@ export const deleteOneCanchaController = async (
       trace: error.message,
     });
     next(
-      new ApplicationError(400, `Error deleting the Canchas ${error.message}`)
+      new ApplicationError(400, error.message)
     );
   }
 };

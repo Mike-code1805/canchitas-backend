@@ -14,14 +14,17 @@ const canchaRouter: Router = Router();
 
 canchaRouter
   .route('')
-  // .post(bodyRequestValidator(hatSchema), createCanchaController)
   .get(authTokenValidation, getAllCanchasController)
-  .post(bodyRequestValidator(canchaSchema), createCanchaController);
+  .post(
+    bodyRequestValidator(canchaSchema),
+    authTokenValidation,
+    createCanchaController
+  );
 
 canchaRouter
   .route('/:id')
   .get(authTokenValidation, getOneCanchaByIdController)
-  .delete(deleteOneCanchaController)
+  .delete(authTokenValidation, deleteOneCanchaController)
   .put(authTokenValidation, updateCanchaController);
 
 export default canchaRouter;
