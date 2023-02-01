@@ -1,27 +1,27 @@
 paths:
-  /api/cancha:
+  /api/reservation:
     post:
       security:
         - bearerAuth: []
       tags:
-        - Cancha
-      summary: Create a cancha.
+        - Reservation
+      summary: Create a reservation.
       requestBody:
         required: true
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Cancha'
+              $ref: '#/components/schemas/Reservation'
       responses:
         201:
-          description: A new cancha has been created successfully
+          description: A new reservation has been created successfully
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  cancha:
-                    $ref: '#/components/schemas/CanchaResponse'
+                  reservation:
+                    $ref: '#/components/schemas/ReservationResponse'
         400:
           description: Unauthorized by invalid data, bad request
         401:
@@ -32,17 +32,17 @@ paths:
       security:
         - bearerAuth: []
       tags:
-        - Cancha
-      summary: Get canchas of the user
+        - Reservation
+      summary: Get reservations of the user
       responses:
         201:
-          description: A new cancha has been created successfully
+          description: A new reservation has been created successfully
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/CanchaResponse'
+                  $ref: '#/components/schemas/ReservationResponse'
         400:
           description: Unauthorized by invalid data, bad request
         401:
@@ -50,13 +50,13 @@ paths:
         403:
           description: Forbidden bad request for incorrect data
 
-  /api/cancha/{id}:
+  /api/reservation/{id}:
     get:
       security:
         - bearerAuth: []
       tags:
-        - Cancha
-      summary: Get a cancha.
+        - Reservation
+      summary: Get a reservation.
       responses:
         201:
           description: A new user has been logged in successfully
@@ -65,8 +65,8 @@ paths:
               schema:
                 type: object
                 properties:
-                  cancha:
-                    $ref: '#/components/schemas/CanchaResponse'
+                  reservation:
+                    $ref: '#/components/schemas/ReservationResponse'
         400:
           description: Unauthorized by invalid data
         403:
@@ -75,8 +75,8 @@ paths:
       security:
         - bearerAuth: []
       tags:
-        - Cancha
-      summary: Delete a cancha.
+        - Reservation
+      summary: Delete a reservation.
       responses:
         200:
           description: A new user has been logged in successfully
@@ -104,14 +104,14 @@ paths:
       security:
         - bearerAuth: []
       tags:
-        - Cancha
-      summary: Update a cancha.
+        - Reservation
+      summary: Update a reservation.
       requestBody:
         required: true
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Cancha'
+              $ref: '#/components/schemas/Reservation'
       responses:
         201:
           description: A new user has been logged in successfully
@@ -144,67 +144,45 @@ components:
       description: >-
         Enter the token e.g.: eyJhbGciOiJIUzI1NiIsIn
   schemas:
-    Cancha:
+    Reservation:
       type: object
       properties:
-        nombre:
+        state:
           type: string
-          description: The names of the cancha
-          example: El golazo
-        description:
+          description: The state of the reservation
+          example: Disponible
+        start:
           type: string
-          description: The description of the cancha
-          example: La canchita esta en perfectas condiciones Contamos con baños limpios Tienda y Barra Alquilamos polos, pelotas, etc.
-        ubicacion:
+          description: The start time of the reservation
+          example: 2023-02-01 15:00:00.000
+        end:
           type: string
-          description: The ubication of the cancha
-          example: Av. los ángeles 2-B
-        estado:
-          type: string
-          description: The state of the cancha
-          example: opened
-        cantAparcamiento:
-          type: number
-          description: The number of parking spaces on the cancha
-          example: 6
+          description: The end time of the reservation
+          example: 2023-02-01 17:00:00.000
       required:
-        - nombres
-        - description
-        - ubicacion
-        - estado
-        - cantAparcamiento
+        - state
+        - start
+        - end
 
-    CanchaResponse:
+    ReservationResponse:
       type: object
       properties:
         _id:
           type: string
-          description: The cancha ID associated
+          description: The reservation ID associated
           example: 63d98c0a88758ebae0199119
-        nombre:
+        state:
           type: string
-          description: The name of the cancha
-          example: El golazo
-        description:
+          description: The state of the reservation
+          example: Disponible
+        start:
           type: string
-          description: The description of the cancha
-          example: La canchita esta en perfectas condiciones Contamos con baños limpios Tienda y Barra Alquilamos polos, pelotas, etc.
-        ubicacion:
+          description: The start time of the reservation
+          example: 2023-02-01 15:00:00.000
+        end:
           type: string
-          description: The ubication of the cancha
-          example: Av. los ángeles 2-B
-        estado:
-          type: string
-          description: The state of the cancha
-          example: apto
-        cantAparcamiento:
-          type: number
-          description: The number of parking spaces on the cancha
-          example: 6
-        calificacion:
-          type: number
-          description: The qualification of the cancha
-          example: 4.5
+          description: The end time of the reservation
+          example: 2023-02-01 17:00:00.000        
         isValid:
           type: string
           description: The state of the user
