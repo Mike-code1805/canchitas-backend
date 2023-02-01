@@ -2,10 +2,13 @@ import { ApplicationError } from '../customErrors/ApplicationError';
 import { Model as ModelType } from 'mongoose';
 import { User } from 'usuario/entitys/user';
 import { Canchero } from '../../canchero/entity/canchero';
+import { Cancha } from '../../cancha/entity/cancha';
 
 export const createResource =
-  <K extends ModelType<Canchero> | ModelType<User>>(Model: K) =>
-  async <T>(resource: T): Promise<Canchero | User> => {
+  <K extends ModelType<Canchero> | ModelType<User> | ModelType<Cancha>>(
+    Model: K
+  ) =>
+  async <T>(resource: T): Promise<Canchero | User | Cancha> => {
     try {
       const newResource = new Model(resource);
       return await newResource.save();

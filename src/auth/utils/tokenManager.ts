@@ -2,7 +2,7 @@ import jwt, { UserIdJwtPayload } from 'jsonwebtoken';
 
 export const createAuthToken = (payload: {}, secret?: string): string => {
   return jwt.sign(payload, `${process.env.JWT_AUTH_SECRET}${secret}`, {
-    expiresIn: '7d',
+    expiresIn: '60d',
   });
 };
 
