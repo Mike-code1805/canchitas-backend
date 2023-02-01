@@ -382,3 +382,99 @@
        fn:undefined 
 
        trace: Este correo ya existe
+2023-02-01 11:54:50:5450 
+       [31merror[39m: [31merror getting Cancha with id 63da972b28b2ab6256ace69b[39m 
+  
+       instance: undefined 
+
+       fn:getOneCanchaByIdService 
+
+       trace: Cancha not found
+2023-02-01 11:54:50:5450 
+       [31merror[39m: [31mError on get one Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Cancha not found
+2023-02-01 11:55:18:5518 
+       [31merror[39m: [31merror getting Cancha with id 63da972b28b2ab6256ace69b[39m 
+  
+       instance: undefined 
+
+       fn:getOneCanchaByIdService 
+
+       trace: Cancha not found
+2023-02-01 11:55:18:5518 
+       [31merror[39m: [31mError on get one Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Cancha not found
+2023-02-01 11:55:44:5544 
+       [31merror[39m: [31merror getting Cancha with id 63da972b28b2ab6256ace69b[39m 
+  
+       instance: undefined 
+
+       fn:getOneCanchaByIdService 
+
+       trace: Cancha not found
+2023-02-01 11:55:45:5545 
+       [31merror[39m: [31mError on get one Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Cancha not found
+2023-02-01 12:04:47:447 
+       [31merror[39m: [31mError deleting project: Cancha not exist[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: Cancha not exist
+2023-02-01 12:04:47:447 
+       [31merror[39m: [31mError on get all Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Cancha not exist
+2023-02-01 12:15:55:1555 
+       [31merror[39m: [31merror getting Cancha with id 63da972b28b2ab6256ace69b[39m 
+  
+       instance: undefined 
+
+       fn:getOneCanchaByIdService 
+
+       trace: Cancha not found
+2023-02-01 12:15:55:1555 
+       [31merror[39m: [31mError on get one Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Cancha not found
+2023-02-01 12:16:02:162 
+       [31merror[39m: [31merror uddating Cancha with id 63da972b28b2ab6256ace69b[39m 
+  
+       instance: undefined 
+
+       fn:updateCanchaService 
+
+       trace: Cancha not exist
+2023-02-01 12:16:02:162 
+       [31merror[39m: [31merror[39m 
+  
+       instance: undefined 
+
+       fn:undefined 
+
+       trace: undefined

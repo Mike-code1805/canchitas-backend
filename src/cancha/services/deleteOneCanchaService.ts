@@ -1,6 +1,8 @@
 import logger from '../../shared/logger/appLogger';
 import { CanchaModel } from '../entity/CanchaModel';
 import { deleteOneResourceById } from '../../shared/factory/deleteOneResourceById';
+import { Cancha } from '../entity/cancha';
+import { findOneResourceByIdWithoutPopulate } from '../../shared/factory/findOneResourceByIdWithoutPopulate';
 
 export const deleteOneCanchaService = async (
   canchaId: string,
@@ -9,6 +11,13 @@ export const deleteOneCanchaService = async (
   try {
     if (!canchaId) throw new Error('invalid project id');
     if (!userId) throw new Error('invalid user id');
+
+    const cancha: Cancha[] = await findOneResourceByIdWithoutPopulate(
+      CanchaModel
+    )(canchaId);
+
+    if (cancha[0].owner.toString() !== userId)
+      throw new Error('Cancha not exist');
 
     const result = await deleteOneResourceById(CanchaModel)({
       _id: canchaId,

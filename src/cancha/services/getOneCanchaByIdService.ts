@@ -4,13 +4,20 @@ import { findOneResourceByIdWithoutPopulate } from '../../shared/factory';
 import Logger from '../../shared/logger/appLogger';
 
 export const getOneCanchaByIdService = async (
-  id: string
+  id: string,
+  owner: string
 ): Promise<Cancha | null> => {
   try {
-    const Cancha: Cancha[] = await findOneResourceByIdWithoutPopulate(
+    const cancha: Cancha[] = await findOneResourceByIdWithoutPopulate(
       CanchaModel
     )(id);
-    return Cancha[0];
+
+    if (cancha[0].owner.toString() !== owner) {
+      console.log('Im here');
+      throw new Error('Cancha not found');
+    }
+
+    return cancha[0];
   } catch (error: any) {
     Logger.error(`error getting Cancha with id ${id}`, {
       service: 'getOneCanchaByIdService',
