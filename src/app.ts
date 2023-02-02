@@ -8,8 +8,8 @@ import cors from 'cors';
 
 const app: Application = express();
 
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 
 app.use('/auth', authRouter);
 app.use('/api/cancha', canchaRouter);
