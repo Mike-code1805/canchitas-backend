@@ -1091,3 +1091,43 @@
        fn:undefined 
 
        trace: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2023-02-02 13:04:10:410 
+       [31merror[39m: [31merror validating body request El precio por hora de la cancha es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El precio por hora de la cancha es obligatoria
+2023-02-02 13:08:46:846 
+       [31merror[39m: [31merror getting all the canchas[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: Cannot populate path `Canchero` because it is not in your schema. Set the `strictPopulate` option to false to override.
+2023-02-02 13:08:46:846 
+       [31merror[39m: [31mError on get all Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Error getting all the canchas: Cannot populate path `Canchero` because it is not in your schema. Set the `strictPopulate` option to false to override.
+2023-02-02 13:11:49:1149 
+       [31merror[39m: [31merror getting all the canchas[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: Cannot populate path `Canchero` because it is not in your schema. Set the `strictPopulate` option to false to override.
+2023-02-02 13:11:49:1149 
+       [31merror[39m: [31mError on get all Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Error getting all the canchas: Cannot populate path `Canchero` because it is not in your schema. Set the `strictPopulate` option to false to override.

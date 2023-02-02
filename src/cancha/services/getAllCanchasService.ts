@@ -8,7 +8,7 @@ export const getAllCanchasService = async (
 ): Promise<Cancha[]> => {
   try {
     if (!userId) throw new Error('invalid user id');
-    const canchas = await CanchaModel.find({ owner: userId });
+    const canchas = await CanchaModel.find({ owner: userId }).populate('owner');
     return canchas;
   } catch (error: any) {
     Logger.error('error getting all the canchas', {

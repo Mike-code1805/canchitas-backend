@@ -167,12 +167,17 @@ components:
           type: number
           description: The number of parking spaces on the cancha
           example: 6
+        precioHora:
+          type: number
+          description: The number of parking spaces on the cancha
+          example: 50
       required:
         - nombres
         - description
         - ubicacion
         - estado
         - cantAparcamiento
+        - precioHora
 
     CanchaResponse:
       type: object
@@ -213,6 +218,10 @@ components:
           type: string
           description: The owner of the reservation
           example: 85d98c0a88758ebae0199119
+        precioHora:
+          type: number
+          description: The number of parking spaces on the cancha
+          example: 50
         createdAt:
           type: string
           description: The date create of the user
@@ -224,4 +233,60 @@ components:
         __v:
           type: string
           description: The version of the user
+          example: 0
+
+    CancheroResponse:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: The canchero ID associated
+          example: 63cb0523b088aed659ed8a36
+        nombres:
+          type: string
+          description: The names of the canchero
+          example: Miguel Enrique
+        apellidos:
+          type: string
+          description: The surnames of the canchero
+          example: Saca Accostupa
+        nacimiento:
+          type: string
+          description: The date of birth of the canchero
+          example: 2000-05-19
+        sexo:
+          type: string
+          description: The gender of the canchero
+          example: M
+        telefono:
+          type: number
+          description: The number of the canchero
+          example: 987654321
+        avatar:
+          type: string
+          description: The avatar of the canchero
+          example: http://www.image.org/avatar.jpg
+        correo:
+          type: string
+          description: The email of the canchero
+          example: miguelenrique@gmail.com
+        password:
+          type: string
+          description: The password of the canchero
+          example: $2b$10$Zx1YsU5/YzLx7l9FVuysmOh0aCWspWMb.4MCzEWuQsmqHJqPT3Td6
+        isValid:
+          type: string
+          description: The state of the canchero
+          example: true
+        createdAt:
+          type: string
+          description: The date create of the canchero
+          example: 2023-01-20T21:18:27.857Z
+        updatedAt:
+          type: string
+          description: The date update of the canchero
+          example: 2023-01-20T21:18:27.857Z
+        __v:
+          type: string
+          description: The version of the canchero
           example: 0

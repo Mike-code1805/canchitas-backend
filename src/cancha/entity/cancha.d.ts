@@ -10,6 +10,7 @@ export interface Cancha {
   cantAparcamiento: Number;
   calificacion: Number;
   isValid: boolean;
+  precioHora: number;
   owner: CancheroId;
 }
 

@@ -12,5 +12,8 @@ export const canchaSchema = yup.object({
     cantAparcamiento: yup
       .number()
       .required('El número de aparcamientos es obligatorio'),
+    precioHora: yup
+      .number()
+      .required('El precio por hora de la cancha es obligatoria'),
   }),
 });
