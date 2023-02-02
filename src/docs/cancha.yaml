@@ -33,10 +33,10 @@ paths:
         - bearerAuth: []
       tags:
         - Cancha
-      summary: Get canchas of the user
+      summary: Get canchas of the canchero
       responses:
         201:
-          description: A new cancha has been created successfully
+          description: Get canchas of DB successfully
           content:
             application/json:
               schema:
@@ -59,7 +59,7 @@ paths:
       summary: Get a cancha.
       responses:
         201:
-          description: A new user has been logged in successfully
+          description: A cancha of the canchero has been getting successfully
           content:
             application/json:
               schema:
@@ -79,7 +79,7 @@ paths:
       summary: Delete a cancha.
       responses:
         200:
-          description: A new user has been logged in successfully
+          description: A cancha of the canchero has been deleted successfully
           content:
             application/json:
               schema:
@@ -114,7 +114,7 @@ paths:
               $ref: '#/components/schemas/Cancha'
       responses:
         201:
-          description: A new user has been logged in successfully
+          description: A cancha of the canchero has been updated successfully
           content:
             application/json:
               schema:

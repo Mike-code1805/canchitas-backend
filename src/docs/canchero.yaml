@@ -1,0 +1,104 @@
+paths:
+  /api/canchero:
+    get:
+      tags:
+        - Canchero
+      summary: Get cancheros
+      responses:
+        201:
+          description: Cancheros has been getting successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CancheroResponse'
+        400:
+          description: Dad response of DB
+components:
+  schemas:
+    Canchero:
+      type: object
+      properties:
+        nombre:
+          type: string
+          description: The names of the canchero
+          example: El golazo
+        description:
+          type: string
+          description: The description of the canchero
+          example: La canchita esta en perfectas condiciones Contamos con baños limpios Tienda y Barra Alquilamos polos, pelotas, etc.
+        ubicacion:
+          type: string
+          description: The ubication of the canchero
+          example: Av. los ángeles 2-B
+        estado:
+          type: string
+          description: The state of the canchero
+          example: opened
+        cantAparcamiento:
+          type: number
+          description: The number of parking spaces on the canchero
+          example: 6
+      required:
+        - nombres
+        - description
+        - ubicacion
+        - estado
+        - cantAparcamiento
+
+    CancheroResponse:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: The canchero ID associated
+          example: 63cb0523b088aed659ed8a36
+        nombres:
+          type: string
+          description: The names of the canchero
+          example: Miguel Enrique
+        apellidos:
+          type: string
+          description: The surnames of the canchero
+          example: Saca Accostupa
+        nacimiento:
+          type: string
+          description: The date of birth of the canchero
+          example: 2000-05-19
+        sexo:
+          type: string
+          description: The gender of the canchero
+          example: M
+        telefono:
+          type: number
+          description: The number of the canchero
+          example: 987654321
+        avatar:
+          type: string
+          description: The avatar of the canchero
+          example: http://www.image.org/avatar.jpg
+        correo:
+          type: string
+          description: The email of the canchero
+          example: miguelenrique@gmail.com
+        password:
+          type: string
+          description: The password of the canchero
+          example: $2b$10$Zx1YsU5/YzLx7l9FVuysmOh0aCWspWMb.4MCzEWuQsmqHJqPT3Td6
+        isValid:
+          type: string
+          description: The state of the canchero
+          example: true
+        createdAt:
+          type: string
+          description: The date create of the canchero
+          example: 2023-01-20T21:18:27.857Z
+        updatedAt:
+          type: string
+          description: The date update of the canchero
+          example: 2023-01-20T21:18:27.857Z
+        __v:
+          type: string
+          description: The version of the canchero
+          example: 0

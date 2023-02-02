@@ -1,5 +1,6 @@
 import express, { Application, NextFunction, Request, Response } from 'express';
 import authRouter from './auth/authRoutes';
+import cancheroRouter from './canchero/cancheroRoutes';
 import canchaRouter from './cancha/canchaRoutes';
 import reservationRouter from './reservation/reservationRoutes';
 import swaggerUI from 'swagger-ui-express';
@@ -12,6 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/auth', authRouter);
+app.use('/api/canchero', cancheroRouter);
 app.use('/api/cancha', canchaRouter);
 app.use('/api/reservation', reservationRouter);
 

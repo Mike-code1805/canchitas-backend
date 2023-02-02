@@ -1029,3 +1029,65 @@
        fn:undefined 
 
        trace: body.start must be a `date` type, but the final value was: `Invalid Date` (cast from the value `"data"`).
+2023-02-02 09:38:46:3846 
+       [31merror[39m: [31muncaughtException: Cannot find module './controllers'[39m
+[31mRequire stack:[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\usuario\userRoutes.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\app.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\index.ts[39m
+[31mError: Cannot find module './controllers'[39m
+[31mRequire stack:[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\usuario\userRoutes.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\app.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\index.ts[39m
+[31m    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[31m    at Function.Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+[31m    at require (node:internal/modules/cjs/helpers:103:18)[39m
+[31m    at Object.<anonymous> (D:\Programs-in-React\canchas\canchitas-backend\src\usuario\userRoutes.ts:2:1)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1159:14)[39m
+[31m    at Module._compile (D:\Programs-in-React\canchas\canchitas-backend\node_modules\source-map-support\source-map-support.js:568:25)[39m
+[31m    at Module.m._compile (C:\Users\HP\AppData\Local\Temp\ts-node-dev-hook-431184678251018.js:69:33)[39m
+[31m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[31m    at require.extensions..jsx.require.extensions..js (C:\Users\HP\AppData\Local\Temp\ts-node-dev-hook-431184678251018.js:114:20)[39m 
+  
+       instance: undefined 
+
+       fn:undefined 
+
+       trace: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2023-02-02 09:40:05:405 
+       [31merror[39m: [31muncaughtException: Cannot find module './getAllCancheroService'[39m
+[31mRequire stack:[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\canchero\services\index.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\services\canchero\authCreateCancheroAccountService.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\controllers\signupAuthCancheroController.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\controllers\index.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\authRoutes.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\app.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\index.ts[39m
+[31mError: Cannot find module './getAllCancheroService'[39m
+[31mRequire stack:[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\canchero\services\index.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\services\canchero\authCreateCancheroAccountService.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\controllers\signupAuthCancheroController.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\controllers\index.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\auth\authRoutes.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\app.ts[39m
+[31m- D:\Programs-in-React\canchas\canchitas-backend\src\index.ts[39m
+[31m    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[31m    at Function.Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+[31m    at require (node:internal/modules/cjs/helpers:103:18)[39m
+[31m    at Object.<anonymous> (D:\Programs-in-React\canchas\canchitas-backend\src\canchero\services\index.ts:3:1)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1159:14)[39m
+[31m    at Module._compile (D:\Programs-in-React\canchas\canchitas-backend\node_modules\source-map-support\source-map-support.js:568:25)[39m
+[31m    at Module.m._compile (C:\Users\HP\AppData\Local\Temp\ts-node-dev-hook-431184678251018.js:69:33)[39m
+[31m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[31m    at require.extensions..jsx.require.extensions..js (C:\Users\HP\AppData\Local\Temp\ts-node-dev-hook-431184678251018.js:114:20)[39m 
+  
+       instance: undefined 
+
+       fn:undefined 
+
+       trace: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
