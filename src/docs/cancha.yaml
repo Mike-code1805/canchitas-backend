@@ -163,6 +163,10 @@ components:
     Cancha:
       type: object
       properties:
+        image:
+          type: string
+          description: The image of the cancha
+          example: https://donpotrero.com/img/posts/2/medidas_lg.jpg
         nombre:
           type: string
           description: The names of the cancha
@@ -241,7 +245,7 @@ components:
             nacimiento: 2000-05-19
             sexo: M
             telefono: 987654321
-            avatar: http://www.image.org/avatar.jpg
+            avatar: https://imgmedia.elpopular.pe/640x345/elpopular/original/2022/10/16/634c017d3b29104a0834810c.webp
             isValid: true
         precioHora:
           type: number

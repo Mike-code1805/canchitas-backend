@@ -7,7 +7,7 @@ export const getAllCanchasService = async (): Promise<Cancha[]> => {
   try {
     const canchas = await CanchaModel.find().populate({
       path: 'owner',
-      select: 'dni nombres apellidos nacimiento sexo telefono avatar isValid',
+      select: 'nombres avatar',
     });
     return canchas;
   } catch (error: any) {

@@ -127,7 +127,7 @@ components:
         avatar:
           type: string
           description: The avatar of the user
-          example: http://www.image.org/avatar.jpg
+          example: https://donpotrero.com/img/posts/2/medidas_lg.jpg
         correo:
           type: string
           description: The email of the user
@@ -165,7 +165,7 @@ components:
         avatar:
           type: string
           description: The avatar of the user
-          example: http://www.image.org/avatar.jpg
+          example: https://donpotrero.com/img/posts/2/medidas_lg.jpg
         correo:
           type: string
           description: The email of the user
@@ -221,7 +221,7 @@ components:
         avatar:
           type: string
           description: The avatar of the canchero
-          example: http://www.image.org/avatar.jpg
+          example: https://donpotrero.com/img/posts/2/medidas_lg.jpg
         correo:
           type: string
           description: The email of the canchero
@@ -274,7 +274,7 @@ components:
         avatar:
           type: string
           description: The avatar of the canchero
-          example: http://www.image.org/avatar.jpg
+          example: https://donpotrero.com/img/posts/2/medidas_lg.jpg
         correo:
           type: string
           description: The email of the canchero
