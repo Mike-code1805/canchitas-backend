@@ -1,5 +1,6 @@
 export * from './createCanchaService';
 export * from './deleteOneCanchaService';
-export * from './getAllCanchasService';
+export * from './getAllCanchasCancheroService';
 export * from './getOneCanchaByIdService';
 export * from './updateCanchaService';
+export * from './getAllCanchasService';

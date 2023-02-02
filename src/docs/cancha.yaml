@@ -135,6 +135,22 @@ paths:
                     example: message of the error
         403:
           description: Forbidden bad request for incorrect data
+  /api/cancha/all:
+    get:
+      tags:
+        - Cancha
+      summary: Get all cancha of all users.
+      responses:
+        200:
+          description: All canchas been getting successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CanchaResponse'
+        400:
+          description: Unauthorized by invalid data
 components:
   securitySchemes:
     bearerAuth:
@@ -215,9 +231,18 @@ components:
           description: The state of the user
           example: true
         owner:
-          type: string
-          description: The owner of the reservation
-          example: 85d98c0a88758ebae0199119
+          type: object
+          properties:
+          example:
+            _id: 63cb0523b088aed659ed8a36
+            dni: 78954145
+            nombres: Miguel Enrique
+            apellidos: Saca Accostupa
+            nacimiento: 2000-05-19
+            sexo: M
+            telefono: 987654321
+            avatar: http://www.image.org/avatar.jpg
+            isValid: true
         precioHora:
           type: number
           description: The number of parking spaces on the cancha
@@ -242,6 +267,10 @@ components:
           type: string
           description: The canchero ID associated
           example: 63cb0523b088aed659ed8a36
+        dni:
+          type: number
+          description: The dni of the canchero
+          example: 78954145
         nombres:
           type: string
           description: The names of the canchero
@@ -266,27 +295,7 @@ components:
           type: string
           description: The avatar of the canchero
           example: http://www.image.org/avatar.jpg
-        correo:
-          type: string
-          description: The email of the canchero
-          example: miguelenrique@gmail.com
-        password:
-          type: string
-          description: The password of the canchero
-          example: $2b$10$Zx1YsU5/YzLx7l9FVuysmOh0aCWspWMb.4MCzEWuQsmqHJqPT3Td6
         isValid:
           type: string
           description: The state of the canchero
           example: true
-        createdAt:
-          type: string
-          description: The date create of the canchero
-          example: 2023-01-20T21:18:27.857Z
-        updatedAt:
-          type: string
-          description: The date update of the canchero
-          example: 2023-01-20T21:18:27.857Z
-        __v:
-          type: string
-          description: The version of the canchero
-          example: 0

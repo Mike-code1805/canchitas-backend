@@ -4,22 +4,25 @@ import { bodyRequestValidator } from '../shared/validators/bodyRequestValidators
 import { canchaSchema } from './utils/canchaValidator';
 import {
   createCanchaController,
-  getAllCanchasController,
+  getAllCanchasCancheroController,
   deleteOneCanchaController,
   getOneCanchaByIdController,
   updateCanchaController,
+  getAllCanchasController,
 } from './controllers';
 
 const canchaRouter: Router = Router();
 
 canchaRouter
   .route('')
-  .get(authTokenValidation, getAllCanchasController)
+  .get(authTokenValidation, getAllCanchasCancheroController)
   .post(
     bodyRequestValidator(canchaSchema),
     authTokenValidation,
     createCanchaController
   );
+
+canchaRouter.route('/all').get(getAllCanchasController);
 
 canchaRouter
   .route('/:id')
