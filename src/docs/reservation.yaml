@@ -1,0 +1,205 @@
+paths:
+  /api/reservation:
+    post:
+      security:
+        - bearerAuth: []
+      tags:
+        - Reservation
+      summary: Create a reservation.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Reservation'
+      responses:
+        201:
+          description: A new reservation has been created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  reservation:
+                    $ref: '#/components/schemas/ReservationResponse'
+        400:
+          description: Unauthorized by invalid data, bad request
+        401:
+          description: Unauthorized, no token provided or token invalid
+        403:
+          description: Forbidden bad request for incorrect data
+    get:
+      security:
+        - bearerAuth: []
+      tags:
+        - Reservation
+      summary: Get reservations of the user
+      responses:
+        201:
+          description: A new reservation has been created successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ReservationResponse'
+        400:
+          description: Unauthorized by invalid data, bad request
+        401:
+          description: Unauthorized, no token provided
+        403:
+          description: Forbidden bad request for incorrect data
+
+  /api/reservation/{id}:
+    get:
+      security:
+        - bearerAuth: []
+      tags:
+        - Reservation
+      summary: Get a reservation.
+      responses:
+        201:
+          description: A new user has been logged in successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  reservation:
+                    $ref: '#/components/schemas/ReservationResponse'
+        400:
+          description: Unauthorized by invalid data
+        403:
+          description: Forbidden bad request for incorrect data
+    delete:
+      security:
+        - bearerAuth: []
+      tags:
+        - Reservation
+      summary: Delete a reservation.
+      responses:
+        200:
+          description: A new user has been logged in successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+        400:
+          description: Unauthorized bad request (params)
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: message of the error
+        401:
+          description: Unauthorized, no token provided or token invalid
+    put:
+      security:
+        - bearerAuth: []
+      tags:
+        - Reservation
+      summary: Update a reservation.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Reservation'
+      responses:
+        201:
+          description: A new user has been logged in successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: updated
+        400:
+          description: Unauthorized bad request (params)
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: message of the error
+        403:
+          description: Forbidden bad request for incorrect data
+components:
+  securitySchemes:
+    bearerAuth:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: >-
+        Enter the token e.g.: eyJhbGciOiJIUzI1NiIsIn
+  schemas:
+    Reservation:
+      type: object
+      properties:
+        state:
+          type: string
+          description: The state of the reservation
+          example: Disponible
+        start:
+          type: string
+          description: The start time of the reservation
+          example: 2023-02-01 15:00:00.000
+        end:
+          type: string
+          description: The end time of the reservation
+          example: 2023-02-01 17:00:00.000
+      required:
+        - state
+        - start
+        - end
+
+    ReservationResponse:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: The reservation ID associated
+          example: 63d98c0a88758ebae0199119
+        state:
+          type: string
+          description: The state of the reservation
+          example: Disponible
+        start:
+          type: string
+          description: The start time of the reservation
+          example: 2023-02-01 15:00:00.000
+        end:
+          type: string
+          description: The end time of the reservation
+          example: 2023-02-01 17:00:00.000        
+        isValid:
+          type: string
+          description: The state of the user
+          example: true
+        owner:
+          type: string
+          description: The owner of the reservation
+          example: 85d98c0a88758ebae0199119
+        createdAt:
+          type: string
+          description: The date create of the user
+          example: 2023-01-20T21:18:27.857Z
+        updatedAt:
+          type: string
+          description: The date update of the user
+          example: 2023-01-20T21:18:27.857Z
+        __v:
+          type: string
+          description: The version of the user
+          example: 0

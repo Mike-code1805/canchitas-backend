@@ -1,0 +1,504 @@
+2023-01-30 12:55:53:5553 
+       [31merror[39m: [31merror creating a new Cancha service[39m 
+  
+       instance: services 
+
+       fn:createCanchaService 
+
+       trace: Cancha validation failed: estado: Path `estado` is required., ubicacion: Path `ubicacion` is required., direccion: Path `direccion` is required.
+2023-01-30 12:55:53:5553 
+       [31merror[39m: [31merror on create Cancha controller[39m 
+  
+       instance: controller 
+
+       fn:createCanchaController 
+
+       trace: Error creating a new Cancha Cancha validation failed: estado: Path `estado` is required., ubicacion: Path `ubicacion` is required., direccion: Path `direccion` is required.
+2023-01-30 13:03:50:350 
+       [31merror[39m: [31merror validating body request El número de aparcamientos es obligatorio[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El número de aparcamientos es obligatorio
+2023-01-31 17:03:15:315 
+       [31merror[39m: [31mError on get all Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Cannot read properties of undefined (reading 'id')
+2023-01-31 22:43:51:4351 
+       [31merror[39m: [31merror validating body request El número de aparcamientos es obligatorio[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El número de aparcamientos es obligatorio
+2023-01-31 22:45:00:450 
+       [31merror[39m: [31merror validating body request El nombre de la cancha es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El nombre de la cancha es obligatoria
+2023-01-31 22:46:12:4612 
+       [31merror[39m: [31merror validating body request Solo envíe "opened" ó "closed"[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: Solo envíe "opened" ó "closed"
+2023-01-31 22:46:48:4648 
+       [31merror[39m: [31merror validating body request body.nombre must be a `number` type, but the final value was: `NaN` (cast from the value `"data"`).[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: body.nombre must be a `number` type, but the final value was: `NaN` (cast from the value `"data"`).
+2023-01-31 22:47:09:479 
+       [31merror[39m: [31merror validating body request body.nombre must be a `number` type, but the final value was: `NaN` (cast from the value `"El golazaso"`).[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: body.nombre must be a `number` type, but the final value was: `NaN` (cast from the value `"El golazaso"`).
+2023-01-31 23:03:49:349 
+       [31merror[39m: [31merror validating body request Solo envíe "opened" ó "closed"[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: Solo envíe "opened" ó "closed"
+2023-01-31 23:05:03:53 
+       [31merror[39m: [31merror validating body request Solo envíe "opened" ó "closed"[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: Solo envíe "opened" ó "closed"
+2023-01-31 23:18:21:1821 
+       [31merror[39m: [31mError validating User credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: No existe el usuario
+2023-01-31 23:18:21:1821 
+       [31merror[39m: [31mError login User[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: No existe el usuario
+2023-01-31 23:18:31:1831 
+       [31merror[39m: [31merror creating User with email miguelenrique@gmail.com[39m 
+  
+       instance: undefined 
+
+       fn:createUserService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.users index: correo_1 dup key: { correo: "miguelenrique@gmail.com" }
+2023-01-31 23:18:31:1831 
+       [31merror[39m: [31mError creating User account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: error creating User with email miguelenrique@gmail.com
+2023-02-01 00:39:00:390 
+       [31merror[39m: [31mError on get all Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Cannot read properties of undefined (reading 'id')
+2023-02-01 00:39:39:3939 
+       [31merror[39m: [31mError on get all Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Cannot read properties of undefined (reading 'id')
+2023-02-01 00:40:44:4044 
+       [31merror[39m: [31mError deleting project: Cast to ObjectId failed for value "{ _id: '63d9dfd50ca8b3cd734868bp', owner: '63caf0744dffadb25c72d9c4' }" (type Object) at path "_id" for model "Cancha"[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: Cast to ObjectId failed for value "{ _id: '63d9dfd50ca8b3cd734868bp', owner: '63caf0744dffadb25c72d9c4' }" (type Object) at path "_id" for model "Cancha"
+2023-02-01 00:40:44:4044 
+       [31merror[39m: [31mError on get all Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Error deleting project: Cast to ObjectId failed for value "{ _id: '63d9dfd50ca8b3cd734868bp', owner: '63caf0744dffadb25c72d9c4' }" (type Object) at path "_id" for model "Cancha"
+2023-02-01 00:41:07:417 
+       [31merror[39m: [31mError deleting project: Cast to ObjectId failed for value "{ _id: '63d9dfd50ca8b3cd734868bp', owner: '63caf0744dffadb25c72d9c4' }" (type Object) at path "_id" for model "Cancha"[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: Cast to ObjectId failed for value "{ _id: '63d9dfd50ca8b3cd734868bp', owner: '63caf0744dffadb25c72d9c4' }" (type Object) at path "_id" for model "Cancha"
+2023-02-01 00:41:07:417 
+       [31merror[39m: [31mError on get all Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Error deleting project: Cast to ObjectId failed for value "{ _id: '63d9dfd50ca8b3cd734868bp', owner: '63caf0744dffadb25c72d9c4' }" (type Object) at path "_id" for model "Cancha"
+2023-02-01 00:41:12:4112 
+       [31merror[39m: [31mError deleting project: cancha not found[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: cancha not found
+2023-02-01 00:41:12:4112 
+       [31merror[39m: [31mError on get all Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Error deleting project: cancha not found
+2023-02-01 00:41:20:4120 
+       [31merror[39m: [31mError deleting project: cancha not found[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: cancha not found
+2023-02-01 00:41:20:4120 
+       [31merror[39m: [31mError on get all Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Error deleting project: cancha not found
+2023-02-01 00:42:06:426 
+       [31merror[39m: [31mError deleting project: cancha not found[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: cancha not found
+2023-02-01 00:42:06:426 
+       [31merror[39m: [31mError on get all Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Error deleting project: cancha not found
+2023-02-01 00:42:34:4234 
+       [31merror[39m: [31mError deleting project: cancha not found[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: cancha not found
+2023-02-01 00:42:34:4234 
+       [31merror[39m: [31mError on get all Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: cancha not found
+2023-02-01 00:43:01:431 
+       [31merror[39m: [31mError deleting project: cancha not found[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: cancha not found
+2023-02-01 00:43:01:431 
+       [31merror[39m: [31mError on get all Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: cancha not found
+2023-02-01 00:49:45:4945 
+       [31merror[39m: [31merror uddating Cancha with id 63d9e01c0ca8b3cd734868bt[39m 
+  
+       instance: undefined 
+
+       fn:updateCanchaService 
+
+       trace: CastError: Cast to ObjectId failed for value "63d9e01c0ca8b3cd734868bt" (type string) at path "_id" for model "Cancha"
+2023-02-01 00:49:45:4945 
+       [31merror[39m: [31merror[39m 
+  
+       instance: undefined 
+
+       fn:undefined 
+
+       trace: undefined
+2023-02-01 00:50:30:5030 
+       [31merror[39m: [31merror uddating Cancha with id 63d9e01c0ca8b3cd734868bt[39m 
+  
+       instance: undefined 
+
+       fn:updateCanchaService 
+
+       trace: CastError: Cast to ObjectId failed for value "63d9e01c0ca8b3cd734868bt" (type string) at path "_id" for model "Cancha"
+2023-02-01 00:50:30:5030 
+       [31merror[39m: [31merror[39m 
+  
+       instance: undefined 
+
+       fn:undefined 
+
+       trace: undefined
+2023-02-01 00:51:15:5115 
+       [31merror[39m: [31merror uddating Cancha with id 63d9e01c0ca8b3cd734868bt[39m 
+  
+       instance: undefined 
+
+       fn:updateCanchaService 
+
+       trace: CastError: Cast to ObjectId failed for value "63d9e01c0ca8b3cd734868bt" (type string) at path "_id" for model "Cancha"
+2023-02-01 00:51:15:5115 
+       [31merror[39m: [31merror[39m 
+  
+       instance: undefined 
+
+       fn:undefined 
+
+       trace: undefined
+2023-02-01 00:52:05:525 
+       [31merror[39m: [31merror uddating Cancha with id 63d9e01c0ca8b3cd734868bt[39m 
+  
+       instance: undefined 
+
+       fn:updateCanchaService 
+
+       trace: CastError: Cast to ObjectId failed for value "63d9e01c0ca8b3cd734868bt" (type string) at path "_id" for model "Cancha"
+2023-02-01 00:52:05:525 
+       [31merror[39m: [31merror[39m 
+  
+       instance: undefined 
+
+       fn:undefined 
+
+       trace: undefined
+2023-02-01 00:52:08:528 
+       [31merror[39m: [31merror uddating Cancha with id 63d9e01c0ca8b3cd734868bt[39m 
+  
+       instance: undefined 
+
+       fn:updateCanchaService 
+
+       trace: CastError: Cast to ObjectId failed for value "63d9e01c0ca8b3cd734868bt" (type string) at path "_id" for model "Cancha"
+2023-02-01 00:52:08:528 
+       [31merror[39m: [31merror[39m 
+  
+       instance: undefined 
+
+       fn:undefined 
+
+       trace: undefined
+2023-02-01 00:52:35:5235 
+       [31merror[39m: [31merror uddating Cancha with id 63d9e01c0ca8b3cd734868br[39m 
+  
+       instance: undefined 
+
+       fn:updateCanchaService 
+
+       trace: CastError: Cast to ObjectId failed for value "63d9e01c0ca8b3cd734868br" (type string) at path "_id" for model "Cancha"
+2023-02-01 00:52:35:5235 
+       [31merror[39m: [31merror[39m 
+  
+       instance: undefined 
+
+       fn:undefined 
+
+       trace: undefined
+2023-02-01 00:55:03:553 
+       [31merror[39m: [31merror validating body request La confirmación de contraseña es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La confirmación de contraseña es obligatoria
+2023-02-01 00:56:08:568 
+       [31merror[39m: [31mError creating Canchero account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: Este correo ya existe
+2023-02-01 00:56:16:5616 
+       [31merror[39m: [31mError creating Canchero account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: Este correo ya existe
+2023-02-01 00:56:34:5634 
+       [31merror[39m: [31mError creating Canchero account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: Este correo ya existe
+2023-02-01 00:57:30:5730 
+       [31merror[39m: [31mError creating Canchero account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: Este correo ya existe
+2023-02-01 11:54:50:5450 
+       [31merror[39m: [31merror getting Cancha with id 63da972b28b2ab6256ace69b[39m 
+  
+       instance: undefined 
+
+       fn:getOneCanchaByIdService 
+
+       trace: Cancha not found
+2023-02-01 11:54:50:5450 
+       [31merror[39m: [31mError on get one Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Cancha not found
+2023-02-01 11:55:18:5518 
+       [31merror[39m: [31merror getting Cancha with id 63da972b28b2ab6256ace69b[39m 
+  
+       instance: undefined 
+
+       fn:getOneCanchaByIdService 
+
+       trace: Cancha not found
+2023-02-01 11:55:18:5518 
+       [31merror[39m: [31mError on get one Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Cancha not found
+2023-02-01 11:55:44:5544 
+       [31merror[39m: [31merror getting Cancha with id 63da972b28b2ab6256ace69b[39m 
+  
+       instance: undefined 
+
+       fn:getOneCanchaByIdService 
+
+       trace: Cancha not found
+2023-02-01 11:55:45:5545 
+       [31merror[39m: [31mError on get one Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Cancha not found
+2023-02-01 12:04:47:447 
+       [31merror[39m: [31mError deleting project: Cancha not exist[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: Cancha not exist
+2023-02-01 12:04:47:447 
+       [31merror[39m: [31mError on get all Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Cancha not exist
+2023-02-01 12:15:55:1555 
+       [31merror[39m: [31merror getting Cancha with id 63da972b28b2ab6256ace69b[39m 
+  
+       instance: undefined 
+
+       fn:getOneCanchaByIdService 
+
+       trace: Cancha not found
+2023-02-01 12:15:55:1555 
+       [31merror[39m: [31mError on get one Canchas controller[39m 
+  
+       instance: controllers 
+
+       fn:undefined 
+
+       trace: Cancha not found
+2023-02-01 12:16:02:162 
+       [31merror[39m: [31merror uddating Cancha with id 63da972b28b2ab6256ace69b[39m 
+  
+       instance: undefined 
+
+       fn:updateCanchaService 
+
+       trace: Cancha not exist
+2023-02-01 12:16:02:162 
+       [31merror[39m: [31merror[39m 
+  
+       instance: undefined 
+
+       fn:undefined 
+
+       trace: undefined
+2023-02-01 15:14:34:1434 
+       [31merror[39m: [31merror validating body request La decha de finalización es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La decha de finalización es obligatoria
+2023-02-01 15:15:03:153 
+       [31merror[39m: [31merror validating body request body.end must be a `date` type, but the final value was: `Invalid Date` (cast from the value `"hola"`).[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: body.end must be a `date` type, but the final value was: `Invalid Date` (cast from the value `"hola"`).
+2023-02-01 15:44:17:4417 
+       [31merror[39m: [31merror validating body request body.start must be a `date` type, but the final value was: `Invalid Date` (cast from the value `"data"`).[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: body.start must be a `date` type, but the final value was: `Invalid Date` (cast from the value `"data"`).

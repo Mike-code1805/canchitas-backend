@@ -1,0 +1,227 @@
+paths:
+  /api/cancha:
+    post:
+      security:
+        - bearerAuth: []
+      tags:
+        - Cancha
+      summary: Create a cancha.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Cancha'
+      responses:
+        201:
+          description: A new cancha has been created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  cancha:
+                    $ref: '#/components/schemas/CanchaResponse'
+        400:
+          description: Unauthorized by invalid data, bad request
+        401:
+          description: Unauthorized, no token provided or token invalid
+        403:
+          description: Forbidden bad request for incorrect data
+    get:
+      security:
+        - bearerAuth: []
+      tags:
+        - Cancha
+      summary: Get canchas of the user
+      responses:
+        201:
+          description: A new cancha has been created successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CanchaResponse'
+        400:
+          description: Unauthorized by invalid data, bad request
+        401:
+          description: Unauthorized, no token provided
+        403:
+          description: Forbidden bad request for incorrect data
+
+  /api/cancha/{id}:
+    get:
+      security:
+        - bearerAuth: []
+      tags:
+        - Cancha
+      summary: Get a cancha.
+      responses:
+        201:
+          description: A new user has been logged in successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  cancha:
+                    $ref: '#/components/schemas/CanchaResponse'
+        400:
+          description: Unauthorized by invalid data
+        403:
+          description: Forbidden bad request for incorrect data
+    delete:
+      security:
+        - bearerAuth: []
+      tags:
+        - Cancha
+      summary: Delete a cancha.
+      responses:
+        200:
+          description: A new user has been logged in successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+        400:
+          description: Unauthorized bad request (params)
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: message of the error
+        401:
+          description: Unauthorized, no token provided or token invalid
+    put:
+      security:
+        - bearerAuth: []
+      tags:
+        - Cancha
+      summary: Update a cancha.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Cancha'
+      responses:
+        201:
+          description: A new user has been logged in successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: updated
+        400:
+          description: Unauthorized bad request (params)
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: message of the error
+        403:
+          description: Forbidden bad request for incorrect data
+components:
+  securitySchemes:
+    bearerAuth:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: >-
+        Enter the token e.g.: eyJhbGciOiJIUzI1NiIsIn
+  schemas:
+    Cancha:
+      type: object
+      properties:
+        nombre:
+          type: string
+          description: The names of the cancha
+          example: El golazo
+        description:
+          type: string
+          description: The description of the cancha
+          example: La canchita esta en perfectas condiciones Contamos con baños limpios Tienda y Barra Alquilamos polos, pelotas, etc.
+        ubicacion:
+          type: string
+          description: The ubication of the cancha
+          example: Av. los ángeles 2-B
+        estado:
+          type: string
+          description: The state of the cancha
+          example: opened
+        cantAparcamiento:
+          type: number
+          description: The number of parking spaces on the cancha
+          example: 6
+      required:
+        - nombres
+        - description
+        - ubicacion
+        - estado
+        - cantAparcamiento
+
+    CanchaResponse:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: The cancha ID associated
+          example: 63d98c0a88758ebae0199119
+        nombre:
+          type: string
+          description: The name of the cancha
+          example: El golazo
+        description:
+          type: string
+          description: The description of the cancha
+          example: La canchita esta en perfectas condiciones Contamos con baños limpios Tienda y Barra Alquilamos polos, pelotas, etc.
+        ubicacion:
+          type: string
+          description: The ubication of the cancha
+          example: Av. los ángeles 2-B
+        estado:
+          type: string
+          description: The state of the cancha
+          example: apto
+        cantAparcamiento:
+          type: number
+          description: The number of parking spaces on the cancha
+          example: 6
+        calificacion:
+          type: number
+          description: The qualification of the cancha
+          example: 4.5
+        isValid:
+          type: string
+          description: The state of the user
+          example: true
+        owner:
+          type: string
+          description: The owner of the reservation
+          example: 85d98c0a88758ebae0199119
+        createdAt:
+          type: string
+          description: The date create of the user
+          example: 2023-01-20T21:18:27.857Z
+        updatedAt:
+          type: string
+          description: The date update of the user
+          example: 2023-01-20T21:18:27.857Z
+        __v:
+          type: string
+          description: The version of the user
+          example: 0
