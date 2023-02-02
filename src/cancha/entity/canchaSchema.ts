@@ -3,7 +3,7 @@ import { Cancha } from './cancha';
 
 export const canchaSchema = new Schema<Cancha>(
   {
-    nombre: { type: String, required: true },
+    nombre: { type: String, required: true, unique: true },
     description: { type: String, required: true },
     ubicacion: { type: String, required: true },
     estado: { type: String, required: true },

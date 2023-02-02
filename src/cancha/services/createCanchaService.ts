@@ -7,6 +7,8 @@ export const createCanchaService = async (
   canchaRequest: CreateCancha
 ): Promise<Cancha> => {
   try {
+    const exist = await CanchaModel.findOne({ nombre: canchaRequest.nombre });
+    if (exist) throw new Error(`Esta nombre de cancha ya existe`);
     const cancha = await createResource(CanchaModel)(canchaRequest);
     return cancha as Cancha;
   } catch (error: any) {
@@ -15,6 +17,6 @@ export const createCanchaService = async (
       service: 'createCanchaService',
       trace: error.message ? error.message : '',
     });
-    throw new Error(`Error creating a new Cancha ${error.message}`);
+    throw new Error(`${error.message}`);
   }
 };

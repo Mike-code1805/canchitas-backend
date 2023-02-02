@@ -1131,3 +1131,67 @@
        fn:undefined 
 
        trace: Error getting all the canchas: Cannot populate path `Canchero` because it is not in your schema. Set the `strictPopulate` option to false to override.
+2023-02-02 14:29:17:2917 
+       [31merror[39m: [31merror creating a new Cancha service[39m 
+  
+       instance: services 
+
+       fn:createCanchaService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.canchas index: nombre_1 dup key: { nombre: "El golazo" }
+2023-02-02 14:29:17:2917 
+       [31merror[39m: [31merror on create Cancha controller[39m 
+  
+       instance: controller 
+
+       fn:createCanchaController 
+
+       trace: Error creating a new Cancha E11000 duplicate key error collection: canchitas-backend.canchas index: nombre_1 dup key: { nombre: "El golazo" }
+2023-02-02 14:31:38:3138 
+       [31merror[39m: [31merror creating a new Cancha service[39m 
+  
+       instance: services 
+
+       fn:createCanchaService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.canchas index: nombre_1 dup key: { nombre: "El golazo" }
+2023-02-02 14:31:38:3138 
+       [31merror[39m: [31merror on create Cancha controller[39m 
+  
+       instance: controller 
+
+       fn:createCanchaController 
+
+       trace: Error creating a new Cancha E11000 duplicate key error collection: canchitas-backend.canchas index: nombre_1 dup key: { nombre: "El golazo" }
+2023-02-02 14:32:33:3233 
+       [31merror[39m: [31merror creating a new Cancha service[39m 
+  
+       instance: services 
+
+       fn:createCanchaService 
+
+       trace: Esta nombre de cancha ya existe
+2023-02-02 14:32:33:3233 
+       [31merror[39m: [31merror on create Cancha controller[39m 
+  
+       instance: controller 
+
+       fn:createCanchaController 
+
+       trace: Error creating a new Cancha Esta nombre de cancha ya existe
+2023-02-02 14:32:52:3252 
+       [31merror[39m: [31merror creating a new Cancha service[39m 
+  
+       instance: services 
+
+       fn:createCanchaService 
+
+       trace: Esta nombre de cancha ya existe
+2023-02-02 14:32:52:3252 
+       [31merror[39m: [31merror on create Cancha controller[39m 
+  
+       instance: controller 
+
+       fn:createCanchaController 
+
+       trace: Esta nombre de cancha ya existe
