@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from 'express';
 import { ApplicationError } from '../../shared/customErrors/ApplicationError';
 import { authValidateCancheroAccount } from '../services/canchero/authValidateCancheroAccount';
 
-export const validateCancheroController = async (
+export const validateTokenCancheroController = async (
   req: Request,
   res: Response,
   next: NextFunction
