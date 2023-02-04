@@ -110,8 +110,43 @@ paths:
           description: Unauthorized by invalid data
         403:
           description: Forbidden bad request for incorrect data
-
+  /auth/canchero/validation:
+    get:
+      security:
+        - bearerAuth: []
+      tags:
+        - Canchero Authentication
+      summary: Get a canchero info
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Canchero'
+      responses:
+        201:
+          description: The canchero has been getting successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  canchero:
+                    $ref: '#/components/schemas/CancheroResponse'
+                  token:
+                    $ref: '#/components/schemas/Token'
+        400:
+          description: Unauthorized by invalid data
+        403:
+          description: Forbidden bad request for incorrect data
 components:
+  securitySchemes:
+    bearerAuth:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: >-
+        Enter the token e.g.: eyJhbGciOiJIUzI1NiIsIn
   schemas:
     User:
       type: object

@@ -9,7 +9,6 @@ export const createReservationController = async (
   next: NextFunction
 ): Promise<void> => {
   try {
-    console.log(req.body.start);
     const reservation = await createReservationService({
       ...req.body,
       owner: req.body.user.id,

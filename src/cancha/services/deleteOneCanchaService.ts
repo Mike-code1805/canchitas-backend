@@ -26,8 +26,6 @@ export const deleteOneCanchaService = async (
 
     if (!result) throw new Error('cancha not found');
 
-    console.log({ result });
-
     return result ? true : false;
   } catch (error: any) {
     logger.error(`Error deleting cancha: ${error.message}`, {

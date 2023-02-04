@@ -6,6 +6,7 @@ import {
   signinAuthUserController,
   signinAuthCancheroController,
   signupAuthCancheroController,
+  validateCancheroController,
 } from './controllers';
 
 import {
@@ -34,5 +35,7 @@ router
 router
   .route('/user/signin')
   .post(bodyRequestValidator(signinSchema), signinAuthUserController);
+
+router.route('/canchero/validation').get(validateCancheroController);
 
 export default router;

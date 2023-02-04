@@ -13,7 +13,6 @@ export const getOneCanchaByIdService = async (
     )(id);
 
     if (cancha[0].owner.toString() !== owner) {
-      console.log('Im here');
       throw new Error('Cancha not found');
     }
 

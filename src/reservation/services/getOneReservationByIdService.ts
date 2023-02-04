@@ -13,7 +13,6 @@ export const getOneReservationByIdService = async (
     )(id);
 
     if (Reservation[0].owner.toString() !== owner) {
-      console.log('Im here');
       throw new Error('Reservation not found');
     }
 

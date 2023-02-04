@@ -26,8 +26,6 @@ export const deleteOneReservationService = async (
 
     if (!result) throw new Error('Reservation not found');
 
-    console.log({ result });
-
     return result ? true : false;
   } catch (error: any) {
     logger.error(`Error deleting reservation: ${error.message}`, {
