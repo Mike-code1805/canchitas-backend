@@ -606,3 +606,129 @@
        fn:createCanchaController 
 
        trace: Esta nombre de cancha ya existe
+2023-02-06 20:42:40:4240 
+       [31merror[39m: [31merror validating body request body.image must be a `string` type, but the final value was: `[[39m
+[31m  "\"https://firebasestorage.googleapis.com/v0/b/canchi…=media&token=d7af4fd5-54a8-4f12-b4c2-6973c4ddd062\""[39m
+[31m]`.[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: body.image must be a `string` type, but the final value was: `[
+  "\"https://firebasestorage.googleapis.com/v0/b/canchi…=media&token=d7af4fd5-54a8-4f12-b4c2-6973c4ddd062\""
+]`.
+2023-02-06 20:43:05:435 
+       [31merror[39m: [31merror validating body request body.image must be a `string` type, but the final value was: `[[39m
+[31m  "\"https://firebasestorage.googleapis.com/v0/b/canchi…=media&token=d7af4fd5-54a8-4f12-b4c2-6973c4ddd062\""[39m
+[31m]`.[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: body.image must be a `string` type, but the final value was: `[
+  "\"https://firebasestorage.googleapis.com/v0/b/canchi…=media&token=d7af4fd5-54a8-4f12-b4c2-6973c4ddd062\""
+]`.
+2023-02-06 20:43:48:4348 
+       [31merror[39m: [31merror validating body request body.image must be a `string` type, but the final value was: `[[39m
+[31m  "\"https://firebasestorage.googleapis.com/v0/b/canchi…=media&token=d7af4fd5-54a8-4f12-b4c2-6973c4ddd062\""[39m
+[31m]`.[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: body.image must be a `string` type, but the final value was: `[
+  "\"https://firebasestorage.googleapis.com/v0/b/canchi…=media&token=d7af4fd5-54a8-4f12-b4c2-6973c4ddd062\""
+]`.
+2023-02-06 20:44:44:4444 
+       [31merror[39m: [31merror validating body request El precio por hora de la cancha es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El precio por hora de la cancha es obligatoria
+2023-02-06 20:45:16:4516 
+       [31merror[39m: [31merror validating body request El número de aparcamientos es obligatorio[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El número de aparcamientos es obligatorio
+2023-02-06 20:45:28:4528 
+       [31merror[39m: [31merror validating body request El estado es obligatorio[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El estado es obligatorio
+2023-02-06 20:45:47:4547 
+       [31merror[39m: [31merror validating body request Solo envíe "opened" ó "closed"[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: Solo envíe "opened" ó "closed"
+2023-02-06 20:45:52:4552 
+       [31merror[39m: [31merror validating body request La descripción es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La descripción es obligatoria
+2023-02-06 20:45:59:4559 
+       [31merror[39m: [31merror validating body request El nombre de la cancha es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El nombre de la cancha es obligatoria
+2023-02-06 20:47:00:470 
+       [31merror[39m: [31merror validating body request body.image must be a `string` type, but the final value was: `[[39m
+[31m  "\"somestring1\"",[39m
+[31m  "\"somestring2\""[39m
+[31m]`.[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: body.image must be a `string` type, but the final value was: `[
+  "\"somestring1\"",
+  "\"somestring2\""
+]`.
+2023-02-06 20:49:54:4954 
+       [31merror[39m: [31merror validating body request body.image must be a `string` type, but the final value was: `[[39m
+[31m  "\"somestring1\"",[39m
+[31m  "\"somestring2\""[39m
+[31m]`.[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: body.image must be a `string` type, but the final value was: `[
+  "\"somestring1\"",
+  "\"somestring2\""
+]`.
+2023-02-06 20:51:50:5150 
+       [31merror[39m: [31merror validating body request body.image must be a `string` type, but the final value was: `[[39m
+[31m  "\"somestring1\"",[39m
+[31m  "\"somestring2\""[39m
+[31m]`.[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: body.image must be a `string` type, but the final value was: `[
+  "\"somestring1\"",
+  "\"somestring2\""
+]`.

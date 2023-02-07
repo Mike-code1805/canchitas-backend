@@ -3,7 +3,7 @@ import { CancheroId } from '../../canchero/entity/canchero';
 
 export interface Cancha {
   id: CanchaId;
-  image: string;
+  image: string[];
   nombre: string;
   description: string;
   ubicacion: string;

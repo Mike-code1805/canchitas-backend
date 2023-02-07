@@ -164,9 +164,9 @@ components:
       type: object
       properties:
         image:
-          type: string
+          type: array
           description: The image of the cancha
-          example: https://donpotrero.com/img/posts/2/medidas_lg.jpg
+          example: ["https://donpotrero.com/img/posts/2/medidas_lg.jpg", "https://donpotrero.com/img/posts/2/medidas_lg.jpg"]
         nombre:
           type: string
           description: The names of the cancha
