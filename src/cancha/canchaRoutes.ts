@@ -2,6 +2,7 @@ import { authTokenValidation } from '../auth/middlewares/authTokenValidation';
 import { Router } from 'express';
 import { bodyRequestValidator } from '../shared/validators/bodyRequestValidators';
 import { canchaSchema } from './utils/canchaValidator';
+import { getNameCanchaController } from './controllers/getNameCanchaController';
 import {
   createCanchaController,
   getAllCanchasCancheroController,
@@ -23,6 +24,7 @@ canchaRouter
   );
 
 canchaRouter.route('/all').get(getAllCanchasController);
+canchaRouter.route('/nombre').post(getNameCanchaController);
 
 canchaRouter
   .route('/:id')

@@ -732,3 +732,67 @@
   "\"somestring1\"",
   "\"somestring2\""
 ]`.
+2023-02-06 21:09:10:910 
+       [31merror[39m: [31merror creating a new Cancha service[39m 
+  
+       instance: services 
+
+       fn:createCanchaService 
+
+       trace: Esta nombre de cancha ya existe
+2023-02-06 21:09:10:910 
+       [31merror[39m: [31merror on create Cancha controller[39m 
+  
+       instance: controller 
+
+       fn:createCanchaController 
+
+       trace: Esta nombre de cancha ya existe
+2023-02-06 22:17:16:1716 
+       [31merror[39m: [31merror creating a new Cancha service[39m 
+  
+       instance: services 
+
+       fn:createCanchaService 
+
+       trace: Esta nombre de cancha ya existe
+2023-02-06 22:17:16:1716 
+       [31merror[39m: [31merror on create Cancha controller[39m 
+  
+       instance: controller 
+
+       fn:createCanchaController 
+
+       trace: Esta nombre de cancha ya existe
+2023-02-06 22:17:39:1739 
+       [31merror[39m: [31merror creating a new Cancha service[39m 
+  
+       instance: services 
+
+       fn:createCanchaService 
+
+       trace: Esta nombre de cancha ya existe
+2023-02-06 22:17:39:1739 
+       [31merror[39m: [31merror on create Cancha controller[39m 
+  
+       instance: controller 
+
+       fn:createCanchaController 
+
+       trace: Esta nombre de cancha ya existe
+2023-02-06 22:20:49:2049 
+       [31merror[39m: [31merror getting Cancha controller[39m 
+  
+       instance: controller 
+
+       fn:getNameCanchaController 
+
+       trace: Cannot set headers after they are sent to the client
+2023-02-06 22:20:56:2056 
+       [31merror[39m: [31merror getting Cancha controller[39m 
+  
+       instance: controller 
+
+       fn:getNameCanchaController 
+
+       trace: Cannot set headers after they are sent to the client

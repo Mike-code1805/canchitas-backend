@@ -4,3 +4,4 @@ export * from './getAllCanchasCancheroController';
 export * from './getOneCanchaByIdController';
 export * from './updateCanchaController';
 export * from './getAllCanchasController';
+export * from './getNameCanchaController';
