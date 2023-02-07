@@ -15,6 +15,10 @@ export const ReservationSchema = new Schema<Reservation>(
       type: String,
       required: true,
     },
+    toName: {
+      type: String,
+      required: true,
+    },
     isValid: { type: Boolean, default: true },
     owner: {
       type: Schema.Types.ObjectId,

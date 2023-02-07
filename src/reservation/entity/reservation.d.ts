@@ -6,6 +6,7 @@ export interface Reservation {
   state: string;
   start: string;
   end: string;
+  toName: string;
   isValid: boolean;
   owner: CancheroId;
 }
