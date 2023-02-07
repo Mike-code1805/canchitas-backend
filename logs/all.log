@@ -796,3 +796,123 @@
        fn:getNameCanchaController 
 
        trace: Cannot set headers after they are sent to the client
+2023-02-07 13:07:33:733 
+       [31merror[39m: [31merror validating body request La confirmación de contraseña es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La confirmación de contraseña es obligatoria
+2023-02-07 13:07:43:743 
+       [31merror[39m: [31mError creating Canchero account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El DNI ya existe
+2023-02-07 13:09:03:93 
+       [31merror[39m: [31merror creating Canchero with email miguelenrique@gmail.com[39m 
+  
+       instance: undefined 
+
+       fn:createCancheroService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.cancheros index: correo_1 dup key: { correo: "miguelenrique@gmail.com" }
+2023-02-07 13:09:03:93 
+       [31merror[39m: [31mError creating Canchero account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: error creando al canchero con el correo miguelenrique@gmail.com
+2023-02-07 13:09:30:930 
+       [31merror[39m: [31merror creating Canchero with email miguelenrique@gmail.com[39m 
+  
+       instance: undefined 
+
+       fn:createCancheroService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.cancheros index: correo_1 dup key: { correo: "miguelenrique@gmail.com" }
+2023-02-07 13:09:30:930 
+       [31merror[39m: [31mError creating Canchero account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: error creando al canchero con el correo miguelenrique@gmail.com
+2023-02-07 13:09:39:939 
+       [31merror[39m: [31mError creating Canchero account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El DNI ya existe
+2023-02-07 13:09:43:943 
+       [31merror[39m: [31merror creating Canchero with email miguelenrique@gmail.com[39m 
+  
+       instance: undefined 
+
+       fn:createCancheroService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.cancheros index: correo_1 dup key: { correo: "miguelenrique@gmail.com" }
+2023-02-07 13:09:43:943 
+       [31merror[39m: [31mError creating Canchero account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: error creando al canchero con el correo miguelenrique@gmail.com
+2023-02-07 13:10:55:1055 
+       [31merror[39m: [31merror creating Canchero with email miguelenrique@gmail.com[39m 
+  
+       instance: undefined 
+
+       fn:createCancheroService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.cancheros index: correo_1 dup key: { correo: "miguelenrique@gmail.com" }
+2023-02-07 13:10:55:1055 
+       [31merror[39m: [31mError creating Canchero account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: error creando al canchero con el correo miguelenrique@gmail.com
+2023-02-07 13:11:00:110 
+       [31merror[39m: [31merror creating Canchero with email miguelenrique@gmail.com[39m 
+  
+       instance: undefined 
+
+       fn:createCancheroService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.cancheros index: correo_1 dup key: { correo: "miguelenrique@gmail.com" }
+2023-02-07 13:11:00:110 
+       [31merror[39m: [31mError creating Canchero account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: error creando al canchero con el correo miguelenrique@gmail.com
+2023-02-07 13:11:33:1133 
+       [31merror[39m: [31merror creating Canchero with email miguelenrique@gmail.com[39m 
+  
+       instance: undefined 
+
+       fn:createCancheroService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.cancheros index: correo_1 dup key: { correo: "miguelenrique@gmail.com" }
+2023-02-07 13:11:33:1133 
+       [31merror[39m: [31mError creating Canchero account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: miguelenrique@gmail.com

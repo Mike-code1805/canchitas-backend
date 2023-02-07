@@ -21,8 +21,6 @@ export const createCancheroService = async (
         trace: error.message,
       }
     );
-    throw new Error(
-      `error creando al canchero con el correo ${CancheroRequest.correo}`
-    );
+    throw new Error(`${CancheroRequest.correo}`);
   }
 };

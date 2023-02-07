@@ -16,6 +16,6 @@ export const getOneUserByEmailService = async (
       service: 'getOneUserByEmailService',
       trace: error.message,
     });
-    throw new Error(`error getting the User with correo${correo}`);
+    throw new Error(`${correo}`);
   }
 };
