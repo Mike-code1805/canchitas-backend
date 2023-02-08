@@ -12,6 +12,9 @@ export const cancheroSchema = new Schema<Canchero>(
     avatar: { type: String, default: '' },
     correo: { type: String, required: true, unique: true },
     password: { type: String, required: true },
+    nombreEmpresa: { type: String, required: true },
+    descriptionEmpresa: { type: String, required: true },
+    ubication: { type: String, required: true },
     isValid: { type: Boolean, default: true },
   },
   {

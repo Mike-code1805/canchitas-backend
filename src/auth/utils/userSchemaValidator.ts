@@ -16,6 +16,14 @@ export const signUpCancheroSchema = yup.object({
       .required('El sexo es obligatorio'),
     telefono: yup.number().required('El teléfono es obligatorio'),
     avatar: yup.string(),
+    nombreEmpresa: yup
+      .string()
+      .required('El nombre de la empresa es obligatoria'),
+    descriptionEmpresa: yup
+      .string()
+      .required('La descripción de la empresa es obligatoria'),
+    ubication: yup.string()
+    .required('La ubicación de la empresa es obligatoria'),
     password: yup
       .string()
       .min(5, 'La contraseña debe tener al menos 5 caracteres')

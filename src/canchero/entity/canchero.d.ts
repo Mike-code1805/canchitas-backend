@@ -11,6 +11,9 @@ export interface Canchero {
   avatar: string;
   correo: string;
   password: string;
+  nombreEmpresa: string;
+  descriptionEmpresa: string;
+  ubication: string;
   isValid: boolean;
 }
 
