@@ -916,3 +916,43 @@
        fn:undefined 
 
        trace: miguelenrique@gmail.com
+2023-02-08 01:07:34:734 
+       [31merror[39m: [31merror validating body request La ubicación de la empresa es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La ubicación de la empresa es obligatoria
+2023-02-08 01:07:53:753 
+       [31merror[39m: [31merror validating body request La descripción de la empresa es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: La descripción de la empresa es obligatoria
+2023-02-08 01:08:20:820 
+       [31merror[39m: [31merror validating body request El nombre de la empresa es obligatoria[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El nombre de la empresa es obligatoria
+2023-02-08 01:08:38:838 
+       [31merror[39m: [31merror creating Canchero with email miguelenrique@gmail.com[39m 
+  
+       instance: undefined 
+
+       fn:createCancheroService 
+
+       trace: E11000 duplicate key error collection: canchitas-backend.cancheros index: correo_1 dup key: { correo: "miguelenrique@gmail.com" }
+2023-02-08 01:08:38:838 
+       [31merror[39m: [31mError creating Canchero account[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: miguelenrique@gmail.com

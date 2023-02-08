@@ -15,7 +15,50 @@ paths:
                   $ref: '#/components/schemas/CancheroResponse'
         400:
           description: Dad response of DB
+    put:
+      security:
+        - bearerAuth: []
+      tags:
+        - Canchero
+      summary: Update al Canchero.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Canchero'
+      responses:
+        200:
+          description: The canchero has been updated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: updated
+        400:
+          description: Unauthorized bad request (params)
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: message of the error
+        403:
+          description: Forbidden bad request for incorrect data
+
 components:
+  securitySchemes:
+    bearerAuth:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: >-
+        Enter the token e.g.: eyJhbGciOiJIUzI1NiIsIn
   schemas:
     Canchero:
       type: object
