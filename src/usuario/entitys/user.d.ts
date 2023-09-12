@@ -2,10 +2,10 @@ import { Types } from 'mongoose';
 
 export interface User {
   id: UserIdType;
-  nombres: string;
-  sexo: string;
+  name: string;
+  gender: string;
   avatar: string;
-  correo: string;
+  email: string;
   password: string;
   isValid: boolean;
 }

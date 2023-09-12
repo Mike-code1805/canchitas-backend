@@ -1545,3 +1545,155 @@
        fn:undefined 
 
        trace: miguelenrique@gmail.com
+2023-02-28 19:15:48:1548 
+       [31merror[39m: [31merror validating body request body.telefono must be a `number` type, but the final value was: `NaN` (cast from the value `""`).[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: body.telefono must be a `number` type, but the final value was: `NaN` (cast from the value `""`).
+2023-02-28 19:16:24:1624 
+       [31merror[39m: [31merror validating body request Solo se acepta "F" ó "M"[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: Solo se acepta "F" ó "M"
+2023-02-28 19:16:29:1629 
+       [31merror[39m: [31merror validating body request El correo es obligatorio[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: El correo es obligatorio
+2023-02-28 20:12:36:1236 
+       [31merror[39m: [31mError validating canchero email[39m 
+  
+       instance: authValidateCancheroAccount 
+
+       fn:undefined 
+
+       trace: connect ECONNREFUSED 127.0.0.1:27017
+2023-04-20 22:59:39:5939 
+       [31merror[39m: [31mError validating Canchero credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: No existe el usuario
+2023-04-20 22:59:39:5939 
+       [31merror[39m: [31mError login Canchero[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: No existe el usuario
+2023-04-20 22:59:57:5957 
+       [31merror[39m: [31mError validating Canchero credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El email o contraseña del Canchero es incorrecta
+2023-04-20 22:59:57:5957 
+       [31merror[39m: [31mError login Canchero[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El email o contraseña del Canchero es incorrecta
+2023-04-20 23:00:15:015 
+       [31merror[39m: [31mError validating Canchero credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El email o contraseña del Canchero es incorrecta
+2023-04-20 23:00:15:015 
+       [31merror[39m: [31mError login Canchero[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El email o contraseña del Canchero es incorrecta
+2023-04-20 23:01:04:14 
+       [31merror[39m: [31mError validating Canchero credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El email o contraseña del Canchero es incorrecta
+2023-04-20 23:01:04:14 
+       [31merror[39m: [31mError login Canchero[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El email o contraseña del Canchero es incorrecta
+2023-04-20 23:01:06:16 
+       [31merror[39m: [31mError validating Canchero credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El email o contraseña del Canchero es incorrecta
+2023-04-20 23:01:06:16 
+       [31merror[39m: [31mError login Canchero[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El email o contraseña del Canchero es incorrecta
+2023-04-20 23:01:24:124 
+       [31merror[39m: [31mError validating Canchero credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: No existe el usuario
+2023-04-20 23:01:24:124 
+       [31merror[39m: [31mError login Canchero[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: No existe el usuario
+2023-04-20 23:01:51:151 
+       [31merror[39m: [31mError validating Canchero credentials[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El email o contraseña del Canchero es incorrecta
+2023-04-20 23:01:51:151 
+       [31merror[39m: [31mError login Canchero[39m 
+  
+       instance: services 
+
+       fn:undefined 
+
+       trace: El email o contraseña del Canchero es incorrecta
+2023-04-20 23:07:28:728 
+       [31merror[39m: [31merror validating body request Debes incluir a nombre de quien está la canchita[39m 
+  
+       instance: middlewares schema validation 
+
+       fn:undefined 
+
+       trace: Debes incluir a nombre de quien está la canchita

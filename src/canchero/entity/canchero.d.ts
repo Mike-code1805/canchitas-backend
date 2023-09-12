@@ -3,17 +3,17 @@ import { Types } from 'mongoose';
 export interface Canchero {
   id: CancheroId;
   dni: number;
-  nombres: string;
-  apellidos: string;
-  nacimiento: Date;
-  sexo: string;
-  telefono: number;
+  firstName: string;
+  lastName: string;
+  birthdate: Date;
+  gender: string;
+  phone: number;
   avatar: string;
-  correo: string;
+  email: string;
   password: string;
-  nombreEmpresa: string;
-  descriptionEmpresa: string;
-  ubication: string;
+  companyName: string;
+  companyDescription: string;
+  location: string;
   isValid: boolean;
 }
 
